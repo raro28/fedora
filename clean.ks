@@ -12,6 +12,7 @@ tilix-nautilus
 -fedora-release-workstation
 -fedora-workstation-backgrounds
 -fedora-bookmarks
+-gnome-user-share
 generic-logos
 generic-release
 generic-release-notes
