@@ -12,7 +12,6 @@ tilix-nautilus
 -fedora-release-workstation
 -fedora-workstation-backgrounds
 -fedora-bookmarks
--gnome-user-share
 generic-logos
 generic-release
 generic-release-notes
@@ -31,6 +30,11 @@ generic-release-common
 -gnome-classic-session
 -gnome-video-effects
 -gnome-tour
+-gnome-user-share
+-gnome-user-docs
+-gnome-initial-setup
+-gnome-online-miners
+-gnome-remote-desktop
 -simple-scan
 -cheese
 -eog
