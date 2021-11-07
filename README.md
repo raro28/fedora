@@ -10,6 +10,8 @@ mock -r fedora-35-x86_64 --shell --isolation=simple --enable-network
 
 git clone --recurse-submodules https://github.com/raro28/workstation.git
 
+git submodule update --remote
+
 /var/lib/mock/fedora-35-x86_64/root/builddir
  
 ksflatten --config workstation/workstation.ks -o flat-workstation.ks --version F35
