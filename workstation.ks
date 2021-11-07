@@ -3,6 +3,7 @@
 %include ./rpmfusion.ks
 %include ./virtualization.ks
 %include ./qmk.ks
+%include ./base-workstation.ks
 
 repo --name=google --baseurl=http://dl.google.com/linux/chrome/rpm/stable/x86_64
 repo --name=teams --baseurl=https://packages.microsoft.com/yumrepos/ms-teams
@@ -13,56 +14,19 @@ part / --fstype="ext4" --size=13000
 
 %packages
 
-git
-zsh
-htop
-iotop
-hwloc-libs
-hwloc-gui
-fswatch
-util-linux-user
-p7zip
-snapd
-awscli
-hdparm
-xdotool
-srm
-smartmontools
-
-gtk-murrine-engine
-gtk2-engines
-jetbrains-mono-fonts
-google-noto-sans-fonts
-google-noto-serif-fonts
-sassc
-
-gitk
-meld
-thunderbird
-file-roller
-skypeforlinux
-teams
-gnome-tweaks
-gnome-extensions-app
-mpv
-vlc
-gthumb
 google-chrome-stable.x86_64
-keepassxc
-gparted
+python3.9
+
 steam
 calibre
+thunderbird
+skypeforlinux
+teams
 
 clang
 cmake
 gtk3-devel
 
-cups
-system-config-printer
-
-livecd-tools
-mock
-
-python3.9
+awscli
 
 %end
