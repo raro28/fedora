@@ -33,6 +33,7 @@ vlc
 gthumb
 keepassxc
 gparted
+calibre
 
 cups
 system-config-printer
