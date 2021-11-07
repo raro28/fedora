@@ -4,6 +4,13 @@
 tilix
 tilix-nautilus
 
+-fedora-logos
+-fedora-release
+-fedora-release-notes
+generic-release
+generic-logos
+generic-release-notes
+
 -gnome-maps
 -gnome-photos
 -gnome-contacts

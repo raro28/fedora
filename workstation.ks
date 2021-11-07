@@ -4,6 +4,7 @@
 %include ./virtualization.ks
 %include ./qmk.ks
 %include ./base-workstation.ks
+%include ./obe.ks
 
 repo --name=google --baseurl=http://dl.google.com/linux/chrome/rpm/stable/x86_64
 repo --name=teams --baseurl=https://packages.microsoft.com/yumrepos/ms-teams
