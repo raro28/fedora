@@ -7,6 +7,9 @@ tilix-nautilus
 -fedora-logos
 -fedora-release
 -fedora-release-notes
+-fedora-release-workstation
+-fedora-workstation-backgrounds
+-fedora-bookmarks
 generic-release
 generic-logos
 generic-release-notes
