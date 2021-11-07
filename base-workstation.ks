@@ -41,4 +41,7 @@ system-config-printer
 livecd-tools
 mock
 
+hunspell-es-MX
+libreoffice-langpack-es
+
 %end
