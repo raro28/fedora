@@ -24,6 +24,7 @@ google-noto-serif-fonts
 sassc
 
 gitk
+gitg
 meld
 file-roller
 gnome-tweaks
@@ -34,6 +35,7 @@ gthumb
 keepassxc
 gparted
 calibre
+transmission-gtk
 
 cups
 system-config-printer
