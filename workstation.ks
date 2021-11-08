@@ -19,7 +19,6 @@ part / --fstype="ext4" --size=13000
 google-chrome-stable.x86_64
 python3.9
 
-steam
 thunderbird
 skypeforlinux
 teams
