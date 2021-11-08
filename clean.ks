@@ -4,20 +4,6 @@
 tilix
 tilix-nautilus
 
--fedora-logos
--fedora-release
--fedora-release-notes
--fedora-logos-httpd
--fedora-release-common
--fedora-release-workstation
--fedora-workstation-backgrounds
--fedora-bookmarks
-generic-logos
-generic-release
-generic-release-notes
-generic-logos-httpd
-generic-release-common
-
 -gnome-maps
 -gnome-photos
 -gnome-contacts
