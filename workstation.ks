@@ -14,6 +14,8 @@ repo --name=slack --baseurl=https://packagecloud.io/slacktechnologies/slack/fedo
 
 part / --fstype="ext4" --size=13000
 
+shutdown
+
 %packages
 
 google-chrome-stable.x86_64
