@@ -1,3 +1,6 @@
+lang en_US
+timezone America/Mexico_City
+
 %packages
 
 git
