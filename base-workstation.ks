@@ -49,4 +49,7 @@ mock
 hunspell-es-MX
 libreoffice-langpack-es
 
+python3.9
+thunderbird
+
 %end

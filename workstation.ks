@@ -5,7 +5,7 @@
 %include ./qmk.ks
 %include ./base-workstation.ks
 %include ./obe.ks
-#%include ./rebrand.ks
+%include ./rebrand.ks
 
 repo --name=google --baseurl=http://dl.google.com/linux/chrome/rpm/stable/x86_64
 repo --name=teams --baseurl=https://packages.microsoft.com/yumrepos/ms-teams
@@ -19,18 +19,12 @@ shutdown
 
 %packages
 
-google-chrome-stable.x86_64
-python3.9
-
-thunderbird
 skypeforlinux
 teams
 slack
+discord
 
-clang
-cmake
-gtk3-devel
-
+google-chrome-stable
 awscli
 
 %end
