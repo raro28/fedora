@@ -12,12 +12,15 @@ hwloc-gui
 fswatch
 util-linux-user
 p7zip
-snapd
 hdparm
 xdotool
 srm
 smartmontools
 neofetch
+
+livecd-tools
+mock
+python3.9
 
 gtk-murrine-engine
 gtk2-engines
@@ -40,16 +43,7 @@ gparted
 calibre
 transmission-gtk
 
-cups
-system-config-printer
-
-livecd-tools
-mock
-
 hunspell-es-MX
 libreoffice-langpack-es
-
-python3.9
-thunderbird
 
 %end

@@ -21,3 +21,6 @@ docker-ce-cli
 containerd.io
 
 %end
+
+services --enabled docker
+services --enabled libvirtd

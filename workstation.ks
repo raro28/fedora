@@ -5,7 +5,7 @@
 %include ./qmk.ks
 %include ./base-workstation.ks
 %include ./obe.ks
-#%include ./rebrand.ks
+%include ./rebrand.ks
 
 repo --name=google --baseurl=http://dl.google.com/linux/chrome/rpm/stable/x86_64
 repo --name=teams --baseurl=https://packages.microsoft.com/yumrepos/ms-teams
@@ -19,12 +19,27 @@ shutdown
 
 %packages
 
+cups
+system-config-printer
+
+google-chrome-stable
+thunderbird
 skypeforlinux
 teams
 slack
 discord
 
-google-chrome-stable
+snapd
 awscli
 
 %end
+
+%post
+
+ln -s /var/lib/snapd/snap /snap
+
+%end
+
+services --enabled snapd
+services --enabled cups
+services --enabled cups-browsed
