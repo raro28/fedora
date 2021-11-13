@@ -7,7 +7,6 @@
 -fedora-logos-httpd
 
 generic-logos
-generic-release
 generic-logos-httpd
 
 %end
