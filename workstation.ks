@@ -32,17 +32,16 @@ teams
 slack
 discord
 
-snapd
+flatpak
 awscli
 
 %end
 
 %post
 
-ln -s /var/lib/snapd/snap /snap
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 %end
 
-services --enabled snapd
 services --enabled cups
 services --enabled cups-browsed
