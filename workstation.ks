@@ -24,6 +24,9 @@ system-config-printer
 
 google-chrome-stable
 thunderbird
+gnome-tweaks
+gnome-extensions-app
+
 skypeforlinux
 teams
 slack

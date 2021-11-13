@@ -33,8 +33,6 @@ gitk
 gitg
 meld
 file-roller
-gnome-tweaks
-gnome-extensions-app
 mpv
 vlc
 gthumb
