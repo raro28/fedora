@@ -1,5 +1,5 @@
-user --name=ramser --groups=users,wheel,mock,docker,vboxsf,libvirt --password=12345678 --shell=/usr/bin/zsh
 user --name=ekthor --groups=users,wheel,mock,docker,vboxsf,libvirt --password=12345678 --shell=/usr/bin/zsh
+user --name=ramser --groups=users,wheel,mock,docker,vboxsf,libvirt --password=12345678 --shell=/usr/bin/zsh
 
 %post --erroronfail
 
@@ -10,6 +10,12 @@ cat <<EOF > /etc/systemd/system/root.mount
 [Unit]
 Documentation=man:fstab(5) man:systemd-fstab-generator(8)
 SourcePath=/etc/fstab
+Conflicts=umount.target
+Before=local-fs.target umount.target
+After=swap.target
+
+[Install]
+WantedBy=local-fs.target
 
 [Mount]
 Where=/root
@@ -22,6 +28,12 @@ cat <<EOF > /etc/systemd/system/home-ramser.mount
 [Unit]
 Documentation=man:fstab(5) man:systemd-fstab-generator(8)
 SourcePath=/etc/fstab
+Conflicts=umount.target
+Before=local-fs.target umount.target
+After=swap.target
+
+[Install]
+WantedBy=local-fs.target
 
 [Mount]
 Where=/home/ramser
@@ -34,6 +46,12 @@ cat <<EOF > /etc/systemd/system/home-ekthor-.cache.mount
 [Unit]
 Documentation=man:fstab(5) man:systemd-fstab-generator(8)
 SourcePath=/etc/fstab
+Conflicts=umount.target
+Before=local-fs.target umount.target
+After=swap.target
+
+[Install]
+WantedBy=local-fs.target
 
 [Mount]
 Where=/home/ekthor/.cache
@@ -42,8 +60,8 @@ Type=tmpfs
 Options=defaults,size=8192M,mode=0700,uid=ekthor,gid=ekthor
 EOF
 
-systemctl enable root.mount
-systemctl enable home-ramser.mount
-systemctl enable home-ekthor-.cache.mount
-
 %end
+
+services --enabled=root.mount
+services --enabled=home-ramser.mount
+services --enabled=home-ekthor-.cache.mount
