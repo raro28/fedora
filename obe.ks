@@ -6,7 +6,7 @@ user --name=ekthor --groups=users,wheel,mock,docker,vboxsf,libvirt --password=12
 mkdir -p /home/ekthor/.cache
 chown ekthor:ekthor -R /home/ekthor/.cache
 
-cat > /etc/systemd/system/root.mount
+cat <<EOF > /etc/systemd/system/root.mount
 [Unit]
 Documentation=man:fstab(5) man:systemd-fstab-generator(8)
 SourcePath=/etc/fstab
@@ -18,7 +18,7 @@ Type=tmpfs
 Options=defaults,size=1024M,mode=0700,uid=root,gid=root
 EOF
 
-cat > /etc/systemd/system/home-ramser.mount
+cat <<EOF > /etc/systemd/system/home-ramser.mount
 [Unit]
 Documentation=man:fstab(5) man:systemd-fstab-generator(8)
 SourcePath=/etc/fstab
@@ -30,7 +30,7 @@ Type=tmpfs
 Options=defaults,size=4096M,mode=0700,uid=ramser,gid=ramser
 EOF
 
-cat > /etc/systemd/system/home-ekthor-.cache.mount
+cat <<EOF > /etc/systemd/system/home-ekthor-.cache.mount
 [Unit]
 Documentation=man:fstab(5) man:systemd-fstab-generator(8)
 SourcePath=/etc/fstab
