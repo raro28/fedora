@@ -1,5 +1,3 @@
-%include ./fedora-kickstarts/fedora-live-workstation.ks
-%include ./clean.ks
 %include ./rpmfusion.ks
 %include ./virtualization.ks
 %include ./qmk.ks
@@ -24,8 +22,6 @@ system-config-printer
 
 google-chrome-stable
 thunderbird
-gnome-tweaks
-gnome-extensions-app
 
 skypeforlinux
 teams

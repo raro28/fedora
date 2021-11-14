@@ -1,3 +1,4 @@
+%include ./gnome-workstation.ks
 %include ./workstation.ks
 
 %packages

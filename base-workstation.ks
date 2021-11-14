@@ -18,7 +18,6 @@ srm
 smartmontools
 neofetch
 
-livecd-tools
 mock
 python3.9
 
@@ -29,6 +28,7 @@ google-noto-sans-fonts
 google-noto-serif-fonts
 sassc
 
+tilix
 gitk
 gitg
 meld

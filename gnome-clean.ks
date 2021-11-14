@@ -1,7 +1,6 @@
 %packages
 -gnome-terminal
 -gnome-terminal-nautilus
-tilix
 tilix-nautilus
 
 -gnome-maps
