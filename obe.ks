@@ -42,8 +42,8 @@ Type=tmpfs
 Options=defaults,size=8192M,mode=0700,uid=ekthor,gid=ekthor
 EOF
 
-%end
+systemctl enable root.mount
+systemctl enable home-ramser.mount
+systemctl enable home-ekthor-.cache.mount
 
-services --enabled root.mount
-services --enabled home-ramser.mount
-services --enabled home-ekthor-.cache.mount
+%end
