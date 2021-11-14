@@ -60,8 +60,8 @@ Type=tmpfs
 Options=defaults,size=8192M,mode=0700,uid=ekthor,gid=ekthor
 EOF
 
-%end
+ln -s /etc/systemd/system/root.mount /etc/systemd/system/local-fs.target.wants/root.mount
+ln -s /etc/systemd/system/home-ramser.mount /etc/systemd/system/local-fs.target.wants/home-ramser.mount
+ln -s /etc/systemd/system/home-ekthor-.cache.mount /etc/systemd/system/local-fs.target.wants/home-ekthor-.cache.mount
 
-services --enabled=root.mount
-services --enabled=home-ramser.mount
-services --enabled=home-ekthor-.cache.mount
+%end
