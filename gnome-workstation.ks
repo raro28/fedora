@@ -6,4 +6,6 @@
 gnome-tweaks
 gnome-extensions-app
 
+file-roller
+
 %end

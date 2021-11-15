@@ -32,7 +32,6 @@ tilix
 gitk
 gitg
 meld
-file-roller
 mpv
 vlc
 gthumb
