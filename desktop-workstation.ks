@@ -17,6 +17,6 @@ blacklist nouveau
 
 EOF
 
-akmodsbuild -k $(uname -r) /usr/src/akmods/nvidia-kmod.latest -o /home/
+sudo -u ekthor akmodsbuild -k $(uname -r) /usr/src/akmods/nvidia-kmod.latest -o /home/ekthor
 
 %end
