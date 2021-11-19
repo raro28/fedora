@@ -18,6 +18,7 @@ srm
 smartmontools
 neofetch
 
+ffmpegthumbnailer
 mock
 python3.9
 
