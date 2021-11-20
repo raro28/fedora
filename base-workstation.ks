@@ -45,3 +45,9 @@ hunspell-es-MX
 libreoffice-langpack-es
 
 %end
+
+%post
+
+grubby --args="delayacct" --update-kernel=ALL
+
+%end
