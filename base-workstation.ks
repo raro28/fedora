@@ -45,12 +45,3 @@ hunspell-es-MX
 libreoffice-langpack-es
 
 %end
-
-%post --erroronfail
-
-koji download-build --arch=x86_64 kernel-5.15.2-200.fc35
-mv kernel* /tmp/.
-dnf update -y /tmp/kernel*
-rm /tmp/kernel*
-
-%end
