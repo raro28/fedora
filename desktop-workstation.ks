@@ -19,4 +19,6 @@ EOF
 
 #sudo -u ekthor akmodsbuild -k $(uname -r) /usr/src/akmods/nvidia-kmod.latest -o /opt
 
+grubby --args="delayacct amd_cpufreq.cppc_enable=1" --update-kernel=ALL
+
 %end

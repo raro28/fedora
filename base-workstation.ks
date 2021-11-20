@@ -53,6 +53,4 @@ mv kernel* /tmp/.
 dnf update -y /tmp/kernel*
 rm /tmp/kernel*
 
-grubby --args="delayacct amd_cpufreq.cppc_enable=1" --update-kernel=ALL
-
 %end
