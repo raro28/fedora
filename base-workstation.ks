@@ -48,6 +48,6 @@ libreoffice-langpack-es
 
 %post
 
-grubby --args="delayacct" --update-kernel=ALL
+grubby --args="delayacct amd_cpufreq.cppc_enable=1" --update-kernel=ALL
 
 %end
