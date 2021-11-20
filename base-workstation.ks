@@ -46,7 +46,12 @@ libreoffice-langpack-es
 
 %end
 
-%post
+%post --erroronfail
+
+koji download-build --arch=x86_64 kernel-5.15.2-200.fc35
+mv kernel* /tmp/.
+dnf update -y /tmp/kernel*
+rm /tmp/kernel*
 
 grubby --args="delayacct amd_cpufreq.cppc_enable=1" --update-kernel=ALL
 
