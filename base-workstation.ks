@@ -40,6 +40,7 @@ keepassxc
 gparted
 calibre
 transmission-gtk
+dconf-editor
 
 hunspell-es-MX
 libreoffice-langpack-es
