@@ -74,6 +74,7 @@ old-files-age=7
 recent-files-max-age=7
 remove-old-temp-files=true
 remove-old-trash-files=true
+report-technical-problems=false
 
 [org/gnome/desktop/screensaver]
 lock-delay=0
@@ -84,6 +85,23 @@ disabled=['org.gnome.Software.desktop']
 
 [ca/desrt/dconf-editor/Settings]
 show-warning=true
+
+[org/gnome/desktop/session]
+idle-delay=0
+
+[org/gnome/settings-daemon/plugins/power]
+sleep-inactive-ac-type='nothing'
+sleep-inactive-battery-timeout='300'
+power-button-action='interactive'
+
+[org/gnome/system/locale]
+region='es_MX.UTF-8'
+
+[org/gnome/system/location]
+enabled=false
+
+[org/gnome/desktop/notifications]
+show-in-lock-screen=false
 EOF
 
 dconf update
