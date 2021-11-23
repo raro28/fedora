@@ -59,7 +59,7 @@ automount-open=false
 autorun-never=true
 
 [org/gnome/desktop/privacy]
-old-files-age=7
+old-files-age=uint32 7
 recent-files-max-age=7
 remove-old-temp-files=true
 remove-old-trash-files=true
@@ -76,14 +76,15 @@ disabled=['org.gnome.Software.desktop']
 show-warning=true
 
 [org/gnome/desktop/session]
-idle-delay=0
+idle-delay=uint32 0
 
 [org/gnome/settings-daemon/plugins/power]
 sleep-inactive-ac-type='nothing'
-sleep-inactive-battery-timeout='300'
+sleep-inactive-battery-timeout=300
 power-button-action='interactive'
+idle-dim=false
 
-[org/gnome/system/locale]
+[system/locale]
 region='es_MX.UTF-8'
 
 [org/gnome/system/location]
