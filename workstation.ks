@@ -27,6 +27,7 @@ skypeforlinux
 teams
 slack
 discord
+telegram-desktop
 
 flatpak
 awscli
