@@ -19,6 +19,7 @@ shutdown
 
 cups
 system-config-printer
+at
 
 google-chrome-stable
 thunderbird
@@ -44,3 +45,4 @@ grubby --args="delayacct" --update-kernel=ALL
 
 services --enabled cups
 services --enabled cups-browsed
+services --enabled atd
