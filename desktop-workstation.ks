@@ -1,5 +1,8 @@
 %include ./gnome-workstation.ks
 %include ./workstation.ks
+%include ./clean.ks
+%include ./looking-glass.ks
+%include ./vfio.ks
 
 %packages
 
@@ -17,7 +20,7 @@ EOF
 
 #sudo -u ekthor akmodsbuild -k $(uname -r) /usr/src/akmods/nvidia-kmod.latest -o /opt
 
-grubby --args="amd_cpufreq.cppc_enable=1 amd_iommu=on iommu=pt" --update-kernel=ALL
+grubby --args="amd_cpufreq.cppc_enable=1 amd_iommu=on iommu=pt rd.driver.pre=vfio-pci" --update-kernel=ALL
 
 %end
 
