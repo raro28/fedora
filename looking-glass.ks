@@ -18,3 +18,11 @@ wayland-devel
 libXinerama-devel
 
 %end
+
+%post --erroronfail
+
+cat <<EOF > /etc/tmpfiles.d/10-looking-glass.conf
+f	/dev/shm/looking-glass	0660	ekthor	kvm	-
+EOF
+
+%end
