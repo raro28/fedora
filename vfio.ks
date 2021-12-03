@@ -1,7 +1,7 @@
 #https://forum.level1techs.com/t/fedora-33-ultimiate-vfio-guide-for-2020-2021-wip/163814
 %post --erroronfail
 
-cat <<EOF > /usr/bin/checkiommu
+cat > /usr/bin/checkiommu << EOF
 #!/usr/bin/env bash
 shopt -s nullglob
 for g in /sys/kernel/iommu_groups/*; do
