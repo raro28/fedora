@@ -48,10 +48,10 @@ libreoffice-langpack-es
 %end
 
 %post  --erroronfail
-cd /var/tmp |/usr/bin/wget https://launchpad.net/veracrypt/trunk/1.25.4/+download/veracrypt-1.25.4-CentOS-8-x86_64.rpm
-rpm -ivh /veracrypt-1.25.4-CentOS-8-x86_64.rpm
+wget https://launchpad.net/veracrypt/trunk/1.25.4/+download/veracrypt-1.25.4-CentOS-8-x86_64.rpm -P /tmp
+rpm -ivh /tmp/veracrypt-1.25.4-CentOS-8-x86_64.rpm
 
-cd /var/tmp |/usr/bin/wget https://www.thefanclub.co.za/sites/default/files/public/overgrive/overgrive-3.3.10.noarch.rpm
-rpm -ivh /overgrive-3.3.10.noarch.rpm
+wget https://www.thefanclub.co.za/sites/default/files/public/overgrive/overgrive-3.3.10.noarch.rpm -P /tmp
+rpm -ivh /tmp/overgrive-3.3.10.noarch.rpm
 
 %end
