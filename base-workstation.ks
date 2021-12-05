@@ -47,7 +47,7 @@ libreoffice-langpack-es
 
 %end
 
-%post --log=/root/my-post-log # To get a log of the installation
+%post  --erroronfail
 cd /var/tmp |/usr/bin/wget https://launchpad.net/veracrypt/trunk/1.25.4/+download/veracrypt-1.25.4-CentOS-8-x86_64.rpm
 rpm -ivh /veracrypt-1.25.4-CentOS-8-x86_64.rpm
 
