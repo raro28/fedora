@@ -18,8 +18,8 @@ cat <<EOF > /etc/modprobe.d/nouveau-blacklist.conf
 blacklist nouveau
 EOF
 
-export KERNEL=$(rpm -q kernel --qf '%{VERSION}-%{RELEASE}.%{ARCH}\n' | tail -1;)
-export NVIDIA=$(rpm -q akmod-nvidia --qf '%{VERSION}-%{RELEASE}.%{ARCH}\n')
+export KERNEL="$(rpm -q kernel --qf '%{VERSION}-%{RELEASE}.%{ARCH}\n' | tail -1;)"
+export NVIDIA="$(rpm -q akmod-nvidia --qf '%{VERSION}-%{RELEASE}.%{ARCH}\n')"
 
 sudo -u ekthor akmodsbuild -k $KERNEL /usr/src/akmods/nvidia-kmod.latest -o /tmp
 rpm -ivh "/tmp/kmod-nvidia-$KERNEL-$NVIDIA.rpm"
