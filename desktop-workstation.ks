@@ -22,8 +22,7 @@ export KERNEL=$(rpm -q kernel --qf '%{VERSION}-%{RELEASE}.%{ARCH}\n' | tail -1;)
 export NVIDIA=$(rpm -q akmod-nvidia --qf '%{VERSION}-%{RELEASE}.%{ARCH}\n')
 
 sudo -u ekthor akmodsbuild -k $KERNEL /usr/src/akmods/nvidia-kmod.latest -o /tmp
-cd /tmp
-rpm -ivh "/kmod-nvidia-$KERNEL-$NVIDIA.rpm"
+rpm -ivh "/tmp/kmod-nvidia-$KERNEL-$NVIDIA.rpm"
 
 grubby --args="amd_cpufreq.cppc_enable=1 amd_iommu=on iommu=pt rd.driver.pre=vfio-pci" --update-kernel=ALL
 
