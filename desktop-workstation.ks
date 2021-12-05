@@ -18,7 +18,7 @@ cat <<EOF > /etc/modprobe.d/nouveau-blacklist.conf
 blacklist nouveau
 EOF
 
-#sudo -u ekthor akmodsbuild -k $(uname -r) /usr/src/akmods/nvidia-kmod.latest -o /opt
+sudo -u ekthor akmodsbuild -k $(uname -r) /usr/src/akmods/nvidia-kmod.latest -o /opt
 
 grubby --args="amd_cpufreq.cppc_enable=1 amd_iommu=on iommu=pt rd.driver.pre=vfio-pci" --update-kernel=ALL
 
