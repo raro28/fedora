@@ -10,7 +10,9 @@ repo --name=teams --baseurl=https://packages.microsoft.com/yumrepos/ms-teams
 repo --name=skype-stable --baseurl=https://repo.skype.com/rpm/stable/
 repo --name=mono-stable --baseurl=https://download.mono-project.com/repo/centos7-stable/
 repo --name=slack --baseurl=https://packagecloud.io/slacktechnologies/slack/fedora/21/x86_64
-repo --name=myrepo --baseurl=file:///home/ekthor/Projects/rpms
+
+url --url="file:///home/ekthor/Projects/rpms"
+repo --name="local" --baseurl=file:///home/ekthor/Projects/rpms
 
 part / --fstype="ext4" --size=13000
 
