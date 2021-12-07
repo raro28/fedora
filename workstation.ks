@@ -11,7 +11,7 @@ repo --name=skype-stable --baseurl=https://repo.skype.com/rpm/stable/
 repo --name=mono-stable --baseurl=https://download.mono-project.com/repo/centos7-stable/
 repo --name=slack --baseurl=https://packagecloud.io/slacktechnologies/slack/fedora/21/x86_64
 
-url --url="file:///opt/rpms"
+url --url file:///opt/rpms
 repo --name="local" --baseurl=file:///opt/rpms
 
 part / --fstype="ext4" --size=13000
