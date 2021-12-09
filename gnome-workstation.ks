@@ -64,6 +64,7 @@ recent-files-max-age=7
 remove-old-temp-files=true
 remove-old-trash-files=true
 report-technical-problems=false
+remember-recent-files=false
 
 [org/gnome/desktop/screensaver]
 lock-delay=0
@@ -92,6 +93,17 @@ enabled=false
 
 [org/gnome/desktop/notifications]
 show-in-lock-screen=false
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding='<Super>t'
+name='tilix'
+command='tilix'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Super>e'
+name='nautilus'
+command='nautilus'
+
 EOF
 
 dconf update
