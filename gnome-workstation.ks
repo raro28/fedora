@@ -49,7 +49,7 @@ show-extensions-notice=false
 
 [org/gnome/nautilus/preferences]
 show-create-link=true
-show-delete-permanently=false
+show-delete-permanently=true
 
 [org/gnome/software]
 first-run=false
