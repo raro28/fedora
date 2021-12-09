@@ -65,3 +65,9 @@ ln -s /etc/systemd/system/home-ramser.mount /etc/systemd/system/local-fs.target.
 ln -s /etc/systemd/system/home-ekthor-.cache.mount /etc/systemd/system/local-fs.target.wants/home-ekthor-.cache.mount
 
 %end
+
+%post
+
+sudo -u ekthor flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+%end
