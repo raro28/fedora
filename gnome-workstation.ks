@@ -133,6 +133,37 @@ sort-directories-first=true
 
 EOF
 
+cat <<EOF > /etc/dconf/db/local.d/03-shell
+[org/gnome/shell/extensions/dash-to-panel]
+panel-sizes='{"0":24}'
+panel-element-positions='{"0":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":true,"position":"stackedBR"}],"1":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":true,"position":"stackedBR"}]}'
+appicon-padding=0
+appicon-margin=4
+animate-appicon-hover=false
+animate-app-switch=false
+animate-window-launch=false
+focus-highlight-dominant=true
+dot-color-dominant=true
+dot-style-unfocused='DASHES'
+dot-position='LEFT'
+dot-size=5
+focus-highlight-opacity=50
+trans-panel-opacity=50.0
+show-favorites-all-monitors=false
+isolate-workspaces=true
+isolate-monitors=true
+hide-overview-on-startup=true
+primary-monitor=1
+
+[org/gnome/shell/extensions/trayIconsReloaded]
+icons-limit=1
+icon-size=24
+
+[org/gnome/shell]
+favorite-apps=['google-chrome.desktop']
+
+EOF
+
 dconf update
 
 %end
