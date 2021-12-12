@@ -29,6 +29,7 @@ google-noto-sans-fonts
 google-noto-serif-fonts
 sassc
 
+xterm
 tilix
 gitk
 gitg
