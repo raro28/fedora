@@ -61,11 +61,3 @@ chown gdm:gdm ~gdm/.config/monitors.xml
 restorecon ~gdm/.config/monitors.xml
 
 %end
-
-%post --erroronfail
-
-cat <<EOF > /etc/hostname
-nameless
-EOF
-
-%end
