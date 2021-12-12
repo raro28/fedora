@@ -11,10 +11,11 @@ git clone --recurse-submodules https://github.com/raro28/workstation.git
 git submodule update --remote
 
 /var/lib/mock/fedora-35-x86_64/root/builddir
- 
-ksflatten --config workstation/workstation.ks -o flat-workstation.ks --version F35
-livemedia-creator --ks flat-workstation.ks --no-virt --resultdir /var/lmc --project Workstation-Live --make-iso --volid Workstation-35 --iso-only --iso-name Workstation-35-x86_64.iso --releasever 35
 
+rm -rf /var/lms *.log *.ks
+
+git stash && git pull origin develop && git stash pop
+ 
 ksflatten --config workstation/desktop-workstation.ks -o flat-desktop-workstation.ks --version F35
 livemedia-creator --ks flat-desktop-workstation.ks --no-virt --resultdir /var/lmc --project Workstation-Live --make-iso --volid Workstation-35 --iso-only --iso-name Workstation-35-x86_64.iso --releasever 35
 
