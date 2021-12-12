@@ -85,7 +85,7 @@ sleep-inactive-battery-timeout=300
 power-button-action='interactive'
 idle-dim=false
 
-[system/locale]
+[org/gnome/system/locale]
 region='es_MX.UTF-8'
 
 [org/gnome/system/location]
@@ -107,8 +107,19 @@ binding='<Super>e'
 name='nautilus'
 command='nautilus'
 
+[com/gexperts/Tilix/Settings]
+warn-vte-config-issue=false
+
+[com/gexperts/Tilix/ProfilesList]
+default='2b7c4080-0ddd-46c5-8f23-563fd3ba789d'
+list=['2b7c4080-0ddd-46c5-8f23-563fd3ba789d']
+
 [com/gexperts/Tilix/profiles]
 list=['2b7c4080-0ddd-46c5-8f23-563fd3ba789d']
+
+[com/gexperts/Tilix]
+profiles=['/com/gexperts/Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d/']
+new-instance-mode='split-down'
 
 [com/gexperts/Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
 visible-name='Default'
