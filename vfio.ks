@@ -13,7 +13,7 @@ done
 EOF
 chmod +x /usr/bin/checkiommu
 
-
+mkdir -p /usr/lib/dracut/modules.d/20vfio
 cat <<EOF > /usr/lib/dracut/modules.d/20vfio/vfio-pci-override.sh
 #!/bin/sh
 PREREQS=""
@@ -27,7 +27,6 @@ modprobe -i vfio-pci
 EOF
 chmod +x /usr/lib/dracut/modules.d/20vfio/vfio-pci-override.sh
 
-mkdir -p /usr/lib/dracut/modules.d/20vfio
 cat <<EOF > /usr/lib/dracut/modules.d/20vfio/module-setup.sh
 #!/usr/bin/bash
 check() {
@@ -37,8 +36,6 @@ depends() {
   return 0
 }
 install() {
-  declare moddir=${moddir}
-  inst_hook pre-udev 00 "$moddir/vfio-pci-override.sh"
   inst_hook pre-udev 00 "/usr/lib/dracut/modules.d/20vfio/vfio-pci-override.sh"
 }
 EOF
