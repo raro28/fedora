@@ -4,6 +4,8 @@
 %include ./looking-glass.ks
 %include ./vfio.ks
 
+network --hostname=mumei
+
 %packages
 
 -virtualbox-guest-additions

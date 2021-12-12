@@ -1,6 +1,8 @@
 %include ./gnome-workstation.ks
 %include ./workstation.ks
 
+network --hostname=mumei
+
 %packages
 
 -virtualbox-guest-additions
