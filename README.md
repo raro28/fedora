@@ -12,7 +12,7 @@ git submodule update --remote
 
 /var/lib/mock/fedora-35-x86_64/root/builddir
 
-rm -rf /var/lmc *.log *.ks
+rm -rf /var/lmc *.log *.ks /var/run/anaconda.pid
 
 git stash && git pull origin develop && git stash pop
  
