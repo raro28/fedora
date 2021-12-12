@@ -134,6 +134,9 @@ sort-directories-first=true
 EOF
 
 cat <<EOF > /etc/dconf/db/local.d/03-shell
+[org/gnome/shell]
+favorite-apps=['google-chrome.desktop']
+
 [org/gnome/shell/extensions/dash-to-panel]
 panel-sizes='{"0":24}'
 panel-element-positions='{"0":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":true,"position":"stackedBR"}],"1":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":true,"position":"stackedBR"}]}'
@@ -159,8 +162,14 @@ primary-monitor=1
 icons-limit=1
 icon-size=24
 
-[org/gnome/shell]
-favorite-apps=['google-chrome.desktop']
+[org/gnome/shell/extensions/vitals]
+show-voltage=false
+show-fan=false
+use-higher-precision=true
+fixed-widths=true
+memory-measurement=0
+show-storage=false
+hot-sensors=['_memory_allocated_', '_memory_swap_used_', '__temperature_avg__', '_processor_frequency_', '_system_load_5m_', '__network-download_max__', '__network-upload_max__']
 
 EOF
 
