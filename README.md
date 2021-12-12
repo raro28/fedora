@@ -12,12 +12,12 @@ git submodule update --remote
 
 /var/lib/mock/fedora-35-x86_64/root/builddir
 
-rm -rf /var/lms *.log *.ks
+rm -rf /var/lmc *.log *.ks
 
 git stash && git pull origin develop && git stash pop
  
 ksflatten --config workstation/desktop-workstation.ks -o flat-desktop-workstation.ks --version F35
-livemedia-creator --ks flat-desktop-workstation.ks --no-virt --resultdir /var/lmc --project Workstation-Live --make-iso --volid Workstation-35 --iso-only --iso-name Workstation-35-x86_64.iso --releasever 35
+livemedia-creator --ks flat-desktop-workstation.ks --no-virt --resultdir /var/lmc --project Desktop-Workstation-Live --make-iso --volid Desktop-Workstation-35 --iso-only --iso-name Desktop-Workstation-35.iso --releasever 35
 
 ksflatten --config workstation/laptop-workstation.ks -o flat-laptop-workstation.ks --version F35
-livemedia-creator --ks flat-laptop-workstation.ks --no-virt --resultdir /var/lmc --project Workstation-Live --make-iso --volid Workstation-35 --iso-only --iso-name Workstation-35-x86_64.iso --releasever 35
+livemedia-creator --ks flat-laptop-workstation.ks --no-virt --resultdir /var/lmc --project Laptop-Workstation-Live --make-iso --volid Laptop-Workstation-35 --iso-only --iso-name Laptop-Workstation-35.iso --releasever 35
