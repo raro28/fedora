@@ -20,7 +20,7 @@ font-name='Noto Sans 11'
 monospace-font-name='JetBrains Mono 10'
 font-hinting='full'
 enable-animations=false
-font-antialiasing='grayscale'
+font-antialiasing='rgba'
 
 [org/gnome/desktop/wm/preferences]
 titlebar-font='Noto Sans Bold 11'
@@ -94,7 +94,6 @@ enabled=false
 [org/gnome/desktop/notifications]
 show-in-lock-screen=false
 
-
 [org/gnome/settings-daemon/plugins/media-keys]
 custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
 
@@ -107,6 +106,18 @@ command='tilix'
 binding='<Super>e'
 name='nautilus'
 command='nautilus'
+
+[com/gexperts/Tilix/profiles]
+list=['2b7c4080-0ddd-46c5-8f23-563fd3ba789d']
+
+[com/gexperts/Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
+visible-name='Default'
+draw-margin=120
+use-system-font=false
+font='JetBrains Mono 12'
+
+[org/gtk/settings/file-chooser]
+sort-directories-first=true
 
 EOF
 
