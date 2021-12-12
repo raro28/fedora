@@ -124,6 +124,7 @@ new-instance-mode='split-down'
 [com/gexperts/Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
 visible-name='Default'
 draw-margin=120
+default-size-columns=120
 use-system-font=false
 font='JetBrains Mono 12'
 
