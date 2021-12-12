@@ -2,9 +2,7 @@ sudo dnf install kernel-modules-$(uname -r) mock
 
 sudo usermod -a -G mock $USER
 
-mock -r fedora-35-x86_64 --init
-
-mock -r fedora-35-x86_64 --install lorax-lmc-novirt vim-minimal pykickstart git koji
+mock -r fedora-35-x86_64 --init --install lorax-lmc-novirt vim-minimal pykickstart git koji
 
 mock -r fedora-35-x86_64 --shell --isolation=simple --enable-network 
 
