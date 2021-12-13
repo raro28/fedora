@@ -191,6 +191,7 @@ fixed-widths=true
 memory-measurement=0
 show-storage=false
 hot-sensors=['_memory_allocated_', '_memory_swap_used_', '__temperature_avg__', '_processor_frequency_', '_system_load_5m_', '__network-download_max__', '__network-upload_max__']
+hide-zeros=true
 
 EOF
 
