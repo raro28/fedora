@@ -40,6 +40,7 @@ gthumb
 keepassxc
 gparted
 calibre
+mcomix
 transmission-gtk
 dconf-editor
 
