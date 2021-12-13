@@ -34,6 +34,10 @@ secondary-color='#000000'
 picture-uri=''
 primary-color='#000000'
 secondary-color='#000000'
+
+[org/gnome/gedit/preferences/editor]
+scheme='oblivion'
+
 EOF
 
 cat <<EOF > /etc/dconf/db/local.d/01-behaviour
@@ -73,7 +77,7 @@ lock-enabled=false
 [org/gnome/desktop/search-providers]
 disabled=['org.gnome.Software.desktop']
 
-[ca/desrt/dconf-editor/Settings]
+[ca/desrt/dconf-editor]
 show-warning=true
 
 [org/gnome/desktop/session]
@@ -130,6 +134,22 @@ font='JetBrains Mono 12'
 
 [org/gtk/settings/file-chooser]
 sort-directories-first=true
+
+[org/gnome/gthumb/browser]
+viewer-thumbnails-orientation='vertical'
+thumbnail-size=256
+go-to-last-location=false
+startup-location='file:///home'
+use-startup-location=true
+active-extensions=['resize_images', 'image_print', 'webalbums', 'burn_disc', 'search', 'list_tools', 'convert_format', 'exiv2_tools', 'edit_metadata', 'find_duplicates', 'rename_series', 'photo_importer', 'raw_files', 'gstreamer_tools', 'catalogs', 'desktop_background', 'change_date', 'contact_sheet', 'image_rotation', 'selections', 'bookmarks', 'terminal', 'file_manager', 'red_eye_removal', 'comments', 'slideshow']
+
+[org/gnome/gnome-system-monitor]
+graph-update-interval=499
+resources-memory-in-iec=true
+network-in-bits=true
+network-total-unit=true
+process-memory-in-iec= true
+disktreenew/col-4-visible=true
 
 EOF
 
