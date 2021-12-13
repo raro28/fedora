@@ -134,6 +134,7 @@ font='JetBrains Mono 12'
 
 [org/gtk/settings/file-chooser]
 sort-directories-first=true
+show-hidden=true
 
 [org/gnome/gthumb/browser]
 viewer-thumbnails-orientation='vertical'
