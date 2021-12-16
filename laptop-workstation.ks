@@ -6,6 +6,8 @@ network --hostname=mumei
 %packages
 
 -virtualbox-guest-additions
+-zram-generator
+-zram-generator-defaults
 
 %end
 
