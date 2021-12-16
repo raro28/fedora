@@ -52,3 +52,4 @@ grubby --args="delayacct" --update-kernel=ALL
 services --enabled cups
 services --enabled cups-browsed
 services --enabled atd
+services --enabled sshd
