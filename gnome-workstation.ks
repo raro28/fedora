@@ -12,6 +12,8 @@ file-roller
 
 %post --erroronfail
 
+rm -f /etc/xdg/autostart/gnome-software-service.desktop
+
 cat <<EOF > /etc/dconf/db/local.d/00-appearance
 [org/gnome/desktop/interface]
 gtk-theme='Adwaita-dark'
@@ -138,13 +140,17 @@ show-hidden=true
 
 [org/gnome/gthumb/browser]
 viewer-thumbnails-orientation='vertical'
-thumbnail-size=256
+thumbnail-size=128
 go-to-last-location=false
 startup-location='file:///home'
 use-startup-location=true
 active-extensions=['resize_images', 'image_print', 'webalbums', 'burn_disc', 'search', 'list_tools', 'convert_format', 'exiv2_tools', 'edit_metadata', 'find_duplicates', 'rename_series', 'photo_importer', 'raw_files', 'gstreamer_tools', 'catalogs', 'desktop_background', 'change_date', 'contact_sheet', 'image_rotation', 'selections', 'bookmarks', 'terminal', 'file_manager', 'red_eye_removal', 'comments', 'slideshow']
 sort-type='file::mtime'
 sort-inverse=true
+reuse-active-window=true
+
+[org/gnome/gthumb/slideshow]
+random-order=true
 
 [org/gnome/gnome-system-monitor]
 graph-update-interval=499
@@ -153,6 +159,9 @@ network-in-bits=true
 network-total-unit=true
 process-memory-in-iec= true
 disktreenew/col-4-visible=true
+
+[org/gnome/software]
+download-updates=false
 
 EOF
 
