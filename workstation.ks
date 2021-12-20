@@ -29,6 +29,7 @@ microsoft-edge-stable
 google-chrome-stable
 thunderbird
 overgrive
+gimp
 
 skypeforlinux
 teams
