@@ -30,6 +30,7 @@ google-chrome-stable
 thunderbird
 overgrive
 gimp
+pspp
 
 skypeforlinux
 teams
