@@ -13,12 +13,6 @@ network --hostname=mumei
 
 %post --erroronfail
 
-grubby --args="i915.enable_psr=0 i915.mitigations=off i915.disable_power_well=1 i915.enable_fbc=1" --update-kernel=ALL
-
-%end
-
-%post --erroronfail
-
 mkdir ~ekthor/.config
 chown ekthor:ekthor -R ~ekthor/.config
 
