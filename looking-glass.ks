@@ -2,20 +2,29 @@
 
 binutils-devel
 cmake
-texlive-gnu-freefont
+dejavu-sans-mono-fonts
 fontconfig-devel
+gcc
+gcc-c++
+libglvnd-devel
+libX11-devel
+libXcursor-devel
+libXfixes-devel
+libXi-devel
+libXinerama-devel
+libxkbcommon-x11-devel
+libXpresent-devel
+libXrandr-devel
+libXScrnSaver-devel
+make
+nettle-devel
+pkgconf-pkg-config
 SDL2-devel
 SDL2_ttf-devel
 spice-protocol
-libX11-devel
-nettle-devel
-wayland-protocols-devel
-gcc
-libXScrnSaver-devel
-libXfixes-devel
-libXi-devel
+texlive-gnu-freefont
 wayland-devel
-libXinerama-devel
+wayland-protocols-devel
 
 %end
 
