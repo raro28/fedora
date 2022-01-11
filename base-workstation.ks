@@ -17,6 +17,7 @@ xdotool
 srm
 smartmontools
 neofetch
+dhex
 
 ffmpegthumbnailer
 mock
