@@ -1,0 +1,13 @@
+#!/bin/sh
+
+mkdir /tmp/rpms
+
+cd /tmp/rpms
+
+koji download-build --arch=x86_64 kernel-5.13.9-200.fc34
+
+wget https://www.thefanclub.co.za/sites/default/files/public/overgrive/overgrive-3.3.10.noarch.rpm
+wget http://download.ebz.epson.net/dsc/op/stable/RPMS/x86_64/epson-inkjet-printer-201215w-1.0.0-1lsb3.2.x86_64.rpm
+wget https://downloads.mongodb.com/compass/mongodb-compass-1.30.1.x86_64.rpm
+
+createrepo /tmp/rpms
