@@ -44,6 +44,7 @@ calibre
 mcomix
 transmission-gtk
 dconf-editor
+busybox
 
 hunspell-es-MX
 libreoffice-langpack-es
