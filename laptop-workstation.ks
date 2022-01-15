@@ -58,4 +58,6 @@ cp -f ~ekthor/.config/monitors.xml ~gdm/.config/monitors.xml
 chown gdm:gdm ~gdm/.config/monitors.xml 
 restorecon ~gdm/.config/monitors.xml
 
+printf "\nexclude=kernel*\n" >> /etc/dnf/dnf.conf
+
 %end
