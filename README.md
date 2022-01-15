@@ -2,7 +2,7 @@ sudo dnf install kernel-modules-$(uname -r) mock
 
 sudo usermod -a -G mock $USER
 
-mock -r fedora-35-x86_64 --init --install lorax-lmc-novirt vim-minimal pykickstart git koji telnet createrepo busybox
+mock -r fedora-35-x86_64 --init --install lorax-lmc-novirt vim-minimal pykickstart git koji telnet createrepo busybox wget
 
 mock -r fedora-35-x86_64 --shell --isolation=simple --enable-network 
 
