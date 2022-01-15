@@ -1,7 +1,7 @@
 %include ./gnome-workstation.ks
 %include ./workstation.ks
 
-network --hostname=mumei
+network --hostname=nameless
 
 %packages
 
