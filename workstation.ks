@@ -36,8 +36,6 @@ slack
 discord
 telegram-desktop
 
-veracrypt
-
 pspp
 flatpak
 awscli
