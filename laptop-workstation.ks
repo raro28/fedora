@@ -9,6 +9,8 @@ network --hostname=mumei
 -zram-generator
 -zram-generator-defaults
 
+kernel-5.13.9-200.fc34.x86_64
+
 %end
 
 %post --erroronfail
