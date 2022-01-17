@@ -29,6 +29,7 @@ google-chrome-stable
 thunderbird
 overgrive
 gimp
+obs-studio
 
 skypeforlinux
 teams
