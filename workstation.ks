@@ -13,7 +13,7 @@ repo --name=slack --baseurl=https://packagecloud.io/slacktechnologies/slack/fedo
 repo --name=microsoft-edge --baseurl=https://packages.microsoft.com/yumrepos/edge
 repo --name="local" --baseurl=http://127.0.0.1:8000
 
-part / --fstype="ext4" --size=13000
+part / --fstype="ext4" --size=14000
 
 shutdown
 
