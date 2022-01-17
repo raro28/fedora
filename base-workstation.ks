@@ -7,6 +7,7 @@ git
 zsh
 htop
 iotop
+fio
 hwloc-libs
 hwloc-gui
 fswatch
@@ -45,6 +46,7 @@ mcomix
 transmission-gtk
 dconf-editor
 busybox
+kdiskmark
 
 hunspell-es-MX
 libreoffice-langpack-es
