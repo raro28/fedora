@@ -42,6 +42,13 @@ secondary-color='#000000'
 [org/gnome/gedit/preferences/editor]
 scheme='oblivion'
 
+[org/gnome/settings-daemon/plugins/color]
+night-light-enabled=true
+night-light-schedule-automatic=true
+night-light-schedule-from=18.0
+night-light-schedule-to=8.0
+night-light-temperature=uint32 2171
+
 EOF
 
 cat <<EOF > /etc/dconf/db/local.d/01-behaviour
