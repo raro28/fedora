@@ -217,6 +217,18 @@ show-storage=false
 hot-sensors=['_memory_allocated_', '_memory_swap_used_', '__temperature_avg__', '_processor_frequency_', '_system_load_5m_', '__network-download_max__', '__network-upload_max__']
 hide-zeros=true
 
+[org/gnome/shell/extensions/dash-to-dock]
+border-radius=25
+custom-theme-shrink=true
+dash-max-icon-size=24
+dock-position='BOTTOM'
+floating-margin=4
+isolate-monitors=true
+isolate-workspaces=true
+multi-monitor=true
+show-show-apps-button=false
+transparency-mode='DYNAMIC'
+
 [org/gnome/shell/app-switcher]
 current-workspace-only=true
 
