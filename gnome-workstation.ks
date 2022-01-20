@@ -135,11 +135,12 @@ list=['2b7c4080-0ddd-46c5-8f23-563fd3ba789d']
 [com/gexperts/Tilix]
 profiles=['/com/gexperts/Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d/']
 new-instance-mode='split-down'
+control-scroll-zoom=true
 
 [com/gexperts/Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
 visible-name='Default'
-draw-margin=120
-default-size-columns=120
+draw-margin=100
+default-size-columns=100
 use-system-font=false
 font='JetBrains Mono 12'
 
