@@ -19,6 +19,7 @@ shutdown
 
 %packages
 
+powerpanel
 epson-inkjet-printer-201215w-1.0.0-1lsb3.2.x86_64
 cups
 system-config-printer
