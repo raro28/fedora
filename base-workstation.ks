@@ -45,8 +45,8 @@ calibre
 mcomix
 transmission-gtk
 dconf-editor
-busybox
 kdiskmark
+firewall-config
 
 hunspell-es-MX
 libreoffice-langpack-es
