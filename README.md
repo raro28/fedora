@@ -15,6 +15,8 @@ git submodule update --remote
 rm -rf /var/lmc *.log *.ks /var/run/anaconda.pid
 
 git stash && git pull origin develop && git stash pop
+
+./workstation/local-repo
  
 ksflatten --config workstation/desktop-workstation.ks -o flat-desktop-workstation.ks --version F35
 livemedia-creator --ks flat-desktop-workstation.ks --no-virt --resultdir /var/lmc --project Desktop-Workstation-Live --make-iso --volid Desktop-Workstation-35 --iso-only --iso-name Desktop-Workstation-35.iso --releasever 35
