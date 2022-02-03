@@ -9,6 +9,9 @@ network --hostname=nameless
 -zram-generator
 -zram-generator-defaults
 
+-kernel
+-kernel-devel
+
 kernel-5.13.9-200.fc34.x86_64
 kernel-devel-5.13.9-200.fc34.x86_64
 
