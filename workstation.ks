@@ -21,16 +21,10 @@ shutdown
 
 powerpanel
 epson-inkjet-printer-201215w-1.0.0-1lsb3.2.x86_64
-cups
-system-config-printer
-at
 
 microsoft-edge-stable
 google-chrome-stable
-thunderbird
 overgrive
-gimp
-obs-studio
 
 skypeforlinux
 teams
@@ -39,7 +33,6 @@ discord
 telegram-desktop
 
 pspp
-flatpak
 awscli
 mongodb-compass
 
@@ -51,7 +44,4 @@ grubby --args="delayacct" --update-kernel=ALL
 
 %end
 
-services --enabled cups
-services --enabled cups-browsed
-services --enabled atd
 services --enabled sshd

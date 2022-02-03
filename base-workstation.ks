@@ -19,6 +19,11 @@ srm
 smartmontools
 neofetch
 dhex
+flatpak
+
+cups
+system-config-printer
+at
 
 ffmpegthumbnailer
 mock
@@ -47,8 +52,16 @@ transmission-gtk
 dconf-editor
 kdiskmark
 firewall-config
+helvum
+thunderbird
+gimp
+obs-studio
 
 hunspell-es-MX
 libreoffice-langpack-es
 
 %end
+
+services --enabled cups
+services --enabled cups-browsed
+services --enabled atd
