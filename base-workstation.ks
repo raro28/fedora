@@ -53,6 +53,7 @@ dconf-editor
 kdiskmark
 firewall-config
 helvum
+easyeffects
 thunderbird
 gimp
 obs-studio
