@@ -21,7 +21,6 @@ tilix-nautilus
 -gnome-online-miners
 -gnome-remote-desktop
 -simple-scan
--cheese
 -eog
 -totem
 
