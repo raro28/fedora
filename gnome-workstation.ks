@@ -5,6 +5,7 @@
 
 gnome-tweaks
 gnome-extensions-app
+gnome-sound-recorder
 
 file-roller
 
