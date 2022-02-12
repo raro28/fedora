@@ -1,5 +1,5 @@
 %include ./gnome-workstation.ks
-%include ./workstation.ks
+%include ./base-workstation.ks
 %include ./clean.ks
 %include ./looking-glass.ks
 %include ./vfio.ks

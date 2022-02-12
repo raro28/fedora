@@ -1,5 +1,5 @@
 %include ./gnome-workstation.ks
-%include ./workstation.ks
+%include ./base-workstation.ks
 
 network --hostname=nameless
 
