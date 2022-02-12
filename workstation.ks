@@ -5,6 +5,8 @@
 %include ./obe.ks
 %include ./rebrand.ks
 
+repo --name=updates
+
 repo --name=google --baseurl=http://dl.google.com/linux/chrome/rpm/stable/x86_64
 repo --name=teams --baseurl=https://packages.microsoft.com/yumrepos/ms-teams
 repo --name=skype-stable --baseurl=https://repo.skype.com/rpm/stable/
