@@ -26,7 +26,7 @@ microsoft-edge-stable
 google-chrome-stable
 overgrive
 
-skypeforlinux
+skypeforlinux-8.78.0.161-1.x86_64
 teams
 slack
 discord
