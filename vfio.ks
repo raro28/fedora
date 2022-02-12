@@ -1,3 +1,9 @@
+%packages
+
+vfio-gpu-passthrough-scripts
+
+%end
+
 %post --erroronfail
 
 dracut -f
