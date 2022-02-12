@@ -13,7 +13,6 @@ tilix-nautilus
 -gnome-shell-extension-background-logo
 -gnome-shell-extension-window-list
 -gnome-classic-session
--gnome-video-effects
 -gnome-tour
 -gnome-user-share
 -gnome-user-docs
