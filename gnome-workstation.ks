@@ -18,8 +18,8 @@ rm -f /etc/xdg/autostart/gnome-software-service.desktop
 cat <<EOF > /etc/dconf/db/local.d/00-appearance
 [org/gnome/desktop/interface]
 gtk-theme='Adwaita-dark'
-document-font-name='Noto Sans 11'
-font-name='Noto Sans 11'
+document-font-name='Noto Sans Display 11'
+font-name='Noto Sans Display 11'
 monospace-font-name='JetBrains Mono 10'
 font-hinting='full'
 enable-animations=false
@@ -27,7 +27,7 @@ font-antialiasing='rgba'
 enable-hot-corners=false
 
 [org/gnome/desktop/wm/preferences]
-titlebar-font='Noto Sans Bold 11'
+titlebar-font='Noto Sans Display Bold 11'
 num-workspaces=2
 
 [org/gnome/desktop/background]
