@@ -2,7 +2,6 @@
 %include ./base-workstation.ks
 %include ./clean.ks
 %include ./looking-glass.ks
-%include ./vfio.ks
 
 network --hostname=mumei
 
@@ -11,6 +10,9 @@ network --hostname=mumei
 -virtualbox-guest-additions
 akmod-nvidia
 xorg-x11-drv-nvidia-cuda
+
+vfio-gpu-passthrough-scripts
+qemu-hook-scripts
 
 %end
 
