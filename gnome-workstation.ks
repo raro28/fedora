@@ -90,7 +90,7 @@ lock-enabled=false
 disabled=['org.gnome.Software.desktop']
 
 [ca/desrt/dconf-editor]
-show-warning=true
+show-warning=false
 
 [org/gnome/desktop/session]
 idle-delay=uint32 0
