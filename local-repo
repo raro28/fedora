@@ -15,6 +15,7 @@ wget https://github.com/raro28/vfio-gpu-passthrough-scripts/releases/download/0.
 wget https://github.com/raro28/qemu-hook-scripts/releases/download/0.0.0/qemu-hook-scripts-0.0.0-3.fc35.x86_64.rpm
 wget https://github.com/raro28/gdm-desktop-monitor-xml/releases/download/0.0.0/gdm-desktop-monitor-xml-0.0.0-1.fc35.x86_64.rpm
 wget https://github.com/raro28/gdm-laptop-monitor-xml/releases/download/0.0.0/gdm-laptop-monitor-xml-0.0.0-1.fc35.x86_64.rpm
+wget https://github.com/raro28/dconf-local-db-config/releases/download/0.0.0/dconf-local-db-config-0.0.0-1.fc35.x86_64.rpm
 
 createrepo /tmp/rpms
 
