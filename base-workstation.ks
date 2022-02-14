@@ -104,8 +104,16 @@ grubby --args="delayacct" --update-kernel=ALL
 
 %end
 
-services --enabled sshd
+%post --erroronfail
 
-services --enabled cups
-services --enabled cups-browsed
-services --enabled atd
+ln -s /etc/systemd/system/multi-user.target.wants/sshd.service /usr/lib/systemd/system/sshd.service
+
+ln -s /etc/systemd/system/printers.target.wants/cups.service /usr/lib/systemd/system/cups.service
+ln -s /etc/systemd/system/multi-user.target.wants/cups.service /usr/lib/systemd/system/cups.service
+ln -s /etc/systemd/system/sockets.target.wants/cups.socket /usr/lib/systemd/system/cups.socket
+ln -s /etc/systemd/system/multi-user.target.wants/cups.path /usr/lib/systemd/system/cups.path
+
+ln -s /etc/systemd/system/multi-user.target.wants/cups-browsed.service /usr/lib/systemd/system/cups-browsed.service
+ln -s /etc/systemd/system/multi-user.target.wants/atd.service /usr/lib/systemd/system/atd.service
+
+%end
