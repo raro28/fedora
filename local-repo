@@ -17,6 +17,7 @@ wget https://github.com/raro28/gdm-desktop-monitor-xml/releases/download/0.0.0/g
 wget https://github.com/raro28/gdm-laptop-monitor-xml/releases/download/0.0.0/gdm-laptop-monitor-xml-0.0.0-1.fc35.x86_64.rpm
 wget https://github.com/raro28/dconf-local-db-config/releases/download/0.0.0/dconf-local-db-config-0.0.0-1.fc35.x86_64.rpm
 wget https://github.com/raro28/looking-glass-client/releases/download/B5.0.1/looking-glass-client-B5.0.1-1.fc35.x86_64.rpm
+wget https://github.com/raro28/scream/releases/download/3.9/scream-3.9-1.fc35.x86_64.rpm
 
 createrepo /tmp/rpms
 
