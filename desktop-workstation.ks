@@ -1,7 +1,6 @@
 %include ./gnome-workstation.ks
 %include ./base-workstation.ks
 %include ./clean.ks
-%include ./looking-glass.ks
 
 network --hostname=mumei
 
@@ -13,6 +12,7 @@ xorg-x11-drv-nvidia-cuda
 
 vfio-gpu-passthrough-scripts
 qemu-hook-scripts
+looking-glass-client
 
 gdm-desktop-monitor-xml
 
