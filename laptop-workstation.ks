@@ -10,7 +10,7 @@ repo --excludepkgs=kernel* --name=updates
 
 -virtualbox-guest-additions
 -zram-generator
--zram-generator-defaultsX
+-zram-generator-defaults
 
 kernel-5.13.9-200.fc34.x86_64
 kernel-devel-5.13.9-200.fc34.x86_64
