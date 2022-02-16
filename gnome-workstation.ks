@@ -17,4 +17,7 @@ file-roller
 
 rm -f /etc/xdg/autostart/gnome-software-service.desktop
 
+cp -f /etc/skel/.config/monitors.xml ~gdm/.config/monitors.xml
+chown gdm:gdm ~gdm/.config/monitors.xml 
+
 %end
