@@ -94,6 +94,7 @@ easyeffects
 thunderbird
 gimp
 obs-studio
+pitivi
 
 hunspell-es-MX
 libreoffice-langpack-es
