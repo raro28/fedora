@@ -1,5 +1,5 @@
-user --name=ekthor --groups=users,wheel,mock,docker,vboxsf,libvirt,input,qemu,kvm --password=12345678 --shell=/usr/bin/zsh
-user --name=ramser --groups=users,wheel,mock,docker,vboxsf,libvirt,input,qemu,kvm --password=12345678 --shell=/usr/bin/zsh
+user --name=ekthor --groups=users,wheel,mock,docker,vboxsf,libvirt,input,qemu,kvm,systemd-journal --password=12345678 --shell=/usr/bin/zsh
+user --name=ramser --groups=users,wheel,mock,docker,vboxsf,libvirt,input,qemu,kvm,systemd-journal --password=12345678 --shell=/usr/bin/zsh
 
 %post --erroronfail
 
