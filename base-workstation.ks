@@ -104,6 +104,7 @@ libreoffice-langpack-es
 %post --erroronfail
 
 grubby --args="delayacct" --update-kernel=ALL
+sed -i 's/#Storage.*/Storage=persistent/' /etc/systemd/journald.conf
 
 %end
 
