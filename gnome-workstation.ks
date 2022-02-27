@@ -6,6 +6,7 @@
 gnome-tweaks
 gnome-extensions-app
 gnome-sound-recorder
+nautilus-terminal
 
 dconf-local-db-config
 

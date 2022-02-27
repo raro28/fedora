@@ -57,13 +57,17 @@ smartmontools
 neofetch
 dhex
 flatpak
+libgtop2-devel
+lm_sensors
+telnet
+mock
+fedpkg
 
 cups
 system-config-printer
 at
 
 ffmpegthumbnailer
-mock
 python3.9
 
 gtk-murrine-engine
@@ -73,6 +77,7 @@ google-noto-sans-fonts
 google-noto-serif-fonts
 google-noto-sans-display-fonts
 google-noto-serif-display-fonts
+cascadia-code-fonts
 sassc
 
 xterm
@@ -84,6 +89,7 @@ mpv
 vlc
 gthumb
 keepassxc
+seahorse
 gparted
 calibre
 mcomix
