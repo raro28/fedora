@@ -3,9 +3,7 @@ repo --name=docker-ce-stable --baseurl=https://download.docker.com/linux/fedora/
 %packages
 @Virtualization --optional
 libguestfs-tools
-VirtualBox
 kernel-devel
-akmod-VirtualBox
 -docker
 -docker-client
 -docker-client-latest
