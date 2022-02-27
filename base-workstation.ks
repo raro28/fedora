@@ -12,6 +12,7 @@ repo --name=skype-stable --baseurl=https://repo.skype.com/rpm/stable/
 repo --name=mono-stable --baseurl=https://download.mono-project.com/repo/centos7-stable/
 repo --name=slack --baseurl=https://packagecloud.io/slacktechnologies/slack/fedora/21/x86_64
 repo --name=microsoft-edge --baseurl=https://packages.microsoft.com/yumrepos/edge
+repo --name=raro28 --baseurl=http://backend_httpd:5002/results/raro28/personal/fedora-$releasever-$basearch/
 repo --name="local" --baseurl=http://127.0.0.1:8000
 
 part / --fstype="ext4" --size=15000
@@ -37,6 +38,7 @@ telegram-desktop
 pspp
 awscli
 mongodb-compass
+mongodb-mongosh
 
 git
 zsh
