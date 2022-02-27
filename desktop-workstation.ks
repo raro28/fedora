@@ -10,11 +10,6 @@ network --hostname=mumei
 akmod-nvidia
 xorg-x11-drv-nvidia-cuda
 
-vfio-gpu-passthrough-scripts
-qemu-hook-scripts
-looking-glass-client
-scream
-
 gdm-desktop-monitor-xml
 
 %end
