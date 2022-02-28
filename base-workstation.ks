@@ -63,19 +63,15 @@ telnet
 mock
 fedpkg
 
-cups
-system-config-printer
-at
-
 ffmpegthumbnailer
 python3.9
 
 jetbrains-mono-fonts
+cascadia-code-fonts
 google-noto-sans-fonts
 google-noto-serif-fonts
 google-noto-sans-display-fonts
 google-noto-serif-display-fonts
-cascadia-code-fonts
 
 xterm
 tilix
@@ -112,9 +108,3 @@ grubby --args="delayacct" --update-kernel=ALL
 sed -i 's/#Storage.*/Storage=persistent/' /etc/systemd/journald.conf
 
 %end
-
-services --enabled sshd
-
-services --enabled cups
-services --enabled cups-browsed
-services --enabled atd
