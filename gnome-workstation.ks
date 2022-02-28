@@ -5,6 +5,11 @@ repo --name=mushrooms --baseurl=https://download.copr.fedorainfracloud.org/resul
 
 %packages
 
+qogir-theme
+fluent-gtk-theme-red-compact
+qogir-cursors-theme
+tela-circle-icon-black-theme
+
 gnome-tweaks
 gnome-extensions-app
 gnome-sound-recorder
