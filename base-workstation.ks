@@ -70,15 +70,12 @@ at
 ffmpegthumbnailer
 python3.9
 
-gtk-murrine-engine
-gtk2-engines
 jetbrains-mono-fonts
 google-noto-sans-fonts
 google-noto-serif-fonts
 google-noto-sans-display-fonts
 google-noto-serif-display-fonts
 cascadia-code-fonts
-sassc
 
 xterm
 tilix
