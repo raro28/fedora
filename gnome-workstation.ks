@@ -1,6 +1,8 @@
 %include ./fedora-kickstarts/fedora-live-workstation.ks
 %include ./gnome-clean.ks
 
+repo --name=mushrooms --baseurl=https://download.copr.fedorainfracloud.org/results/tomaszgasior/mushrooms/fedora-$releasever-$basearch/
+
 %packages
 
 gnome-tweaks
