@@ -8,6 +8,7 @@ network --hostname=mumei
 
 -virtualbox-guest-additions
 akmod-nvidia
+kernel-devel
 xorg-x11-drv-nvidia-cuda
 
 gdm-desktop-monitor-xml
