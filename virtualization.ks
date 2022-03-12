@@ -1,9 +1,6 @@
 repo --name=docker-ce-stable --baseurl=https://download.docker.com/linux/fedora/$releasever/$basearch/stable
 
 %packages
-@Virtualization --optional
-libguestfs-tools
-kernel-devel
 -docker
 -docker-client
 -docker-client-latest
@@ -14,9 +11,9 @@ kernel-devel
 -docker-selinux
 -docker-engine-selinux
 -docker-engine
-docker-ce
 docker-ce-cli
-containerd.io
+@Virtualization --optional
+libguestfs-tools
 
 %end
 
