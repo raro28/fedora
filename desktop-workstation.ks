@@ -23,8 +23,14 @@ EOF
 
 export KERNEL="$(rpm -q kernel --qf '%{VERSION}-%{RELEASE}.%{ARCH}\n' | tail -1;)"
 export NVIDIA="$(rpm -q akmod-nvidia --qf '%{VERSION}-%{RELEASE}.%{ARCH}\n')"
+export NVIDIA_KMOD=kmod-nvidia-$KERNEL-$NVIDIA
 
-sudo -u ramser akmodsbuild -k $KERNEL /usr/src/akmods/nvidia-kmod.latest -o /tmp
-rpm -ivh "/tmp/kmod-nvidia-$KERNEL-$NVIDIA.rpm"
+if rpm -q $NVIDIA_KMOD
+then
+ echo "skip nvidia_mod"
+else
+ sudo -u ramser akmodsbuild -k $KERNEL /usr/src/akmods/nvidia-kmod.latest -o /tmp
+ rpm -ivh $NVIDIA_KMOD.rpm
+fi
 
 %end
