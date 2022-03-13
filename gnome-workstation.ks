@@ -16,6 +16,7 @@ gnome-sound-recorder
 nautilus-terminal
 
 dconf-local-db-config
+user-files
 
 file-roller
 
