@@ -12,6 +12,7 @@ repo --name=skype-stable --baseurl=https://repo.skype.com/rpm/stable/
 repo --name=mono-stable --baseurl=https://download.mono-project.com/repo/centos7-stable/
 repo --name=slack --baseurl=https://packagecloud.io/slacktechnologies/slack/fedora/21/x86_64
 repo --name=microsoft-edge --baseurl=https://packages.microsoft.com/yumrepos/edge
+repo --name=vscode --baseurl=https://packages.microsoft.com/yumrepos/vscode
 repo --name=raro28-wdm --baseurl=http://ekthor.io:5002/results/raro28/wdm/fedora-$releasever-$basearch/
 repo --name="local" --baseurl=http://127.0.0.1:8000
 
@@ -74,6 +75,7 @@ google-noto-serif-fonts
 google-noto-sans-display-fonts
 google-noto-serif-display-fonts
 
+code
 xterm
 tilix
 gitk
