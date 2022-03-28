@@ -25,4 +25,6 @@ gdm-laptop-monitor-xml
 
 printf "\nexclude=kernel*\n" >> /etc/dnf/dnf.conf
 
+hostnamectl set-hostname nameless
+
 %end
