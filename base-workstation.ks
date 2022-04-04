@@ -46,6 +46,7 @@ git
 zsh
 htop
 iotop
+powertop
 fio
 hwloc-libs
 hwloc-gui
