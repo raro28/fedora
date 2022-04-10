@@ -9,7 +9,6 @@ repo --name=updates
 repo --name=google --baseurl=http://dl.google.com/linux/chrome/rpm/stable/x86_64
 repo --name=teams --baseurl=https://packages.microsoft.com/yumrepos/ms-teams
 repo --name=skype-stable --baseurl=https://repo.skype.com/rpm/stable/
-repo --name=mono-stable --baseurl=https://download.mono-project.com/repo/centos7-stable/
 repo --name=slack --baseurl=https://packagecloud.io/slacktechnologies/slack/fedora/21/x86_64
 repo --name=microsoft-edge --baseurl=https://packages.microsoft.com/yumrepos/edge
 repo --name=vscode --baseurl=https://packages.microsoft.com/yumrepos/vscode
