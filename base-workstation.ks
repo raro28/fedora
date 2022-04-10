@@ -13,7 +13,7 @@ repo --name=mono-stable --baseurl=https://download.mono-project.com/repo/centos7
 repo --name=slack --baseurl=https://packagecloud.io/slacktechnologies/slack/fedora/21/x86_64
 repo --name=microsoft-edge --baseurl=https://packages.microsoft.com/yumrepos/edge
 repo --name=vscode --baseurl=https://packages.microsoft.com/yumrepos/vscode
-repo --name=raro28-wdm --baseurl=http://ekthor.io:5002/results/raro28/wdm/fedora-$releasever-$basearch/
+repo --name=raro28-wdm --baseurl=https://download.copr.fedorainfracloud.org/results/raro28/wdm/fedora-$releasever-$basearch/
 repo --name="local" --baseurl=http://127.0.0.1:8000
 
 part / --fstype="ext4" --size=15000
