@@ -40,7 +40,6 @@ telegram-desktop
 pspp
 awscli
 mongodb-compass
-mongodb-mongosh
 
 git
 zsh
