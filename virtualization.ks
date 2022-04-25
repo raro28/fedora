@@ -11,7 +11,9 @@ repo --name=docker-ce-stable --baseurl=https://download.docker.com/linux/fedora/
 -docker-selinux
 -docker-engine-selinux
 -docker-engine
-docker-ce docker-ce-cli containerd.io
+docker-ce
+docker-ce-cli
+containerd.io
 @Virtualization --optional
 libguestfs-tools
 
