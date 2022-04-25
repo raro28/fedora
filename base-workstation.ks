@@ -55,11 +55,9 @@ hdparm
 xdotool
 srm
 smartmontools
-neofetch
 dhex
 flatpak
 libgtop2-devel
-lm_sensors
 telnet
 mock
 fedpkg
@@ -108,5 +106,7 @@ libreoffice-langpack-es
 
 grubby --args="delayacct" --update-kernel=ALL
 sed -i 's/#Storage.*/Storage=persistent/' /etc/systemd/journald.conf
+
+timedatectl set-timezone America/Mexico_City
 
 %end
