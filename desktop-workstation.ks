@@ -33,8 +33,6 @@ else
  rpm -ivh $NVIDIA_KMOD.rpm
 fi
 
-hostnamectl set-hostname mumei
-
 grubby --args="initcall_blacklist=acpi_cpufreq_init amd_pstate.shared_mem=1" --update-kernel=ALL
 
 %end
