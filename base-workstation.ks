@@ -62,6 +62,11 @@ telnet
 mock
 fedpkg
 
+bison
+elfutils-libelf-devel
+flex
+openssl-devel
+
 ffmpegthumbnailer
 python3.9
 
