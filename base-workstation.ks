@@ -14,6 +14,8 @@ repo --name=microsoft-edge --baseurl=https://packages.microsoft.com/yumrepos/edg
 repo --name=vscode --baseurl=https://packages.microsoft.com/yumrepos/vscode
 repo --name=raro28-wdm --baseurl=https://download.copr.fedorainfracloud.org/results/raro28/wdm/fedora-$releasever-$basearch/
 repo --name="local" --baseurl=http://127.0.0.1:8000
+repo --name=fedora --mirrorlist=https://mirrors.fedoraproject.org/mirrorlist?repo=fedora-$releasever&arch=$basearch
+repo --name=updates --mirrorlist=https://mirrors.fedoraproject.org/mirrorlist?repo=updates-released-f$releasever&arch=$basearch
 
 part / --fstype="ext4" --size=15000
 
