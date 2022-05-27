@@ -10,11 +10,3 @@ rpmfusion-free-release-tainted
 *-firmware
 
 %end
-
-%post
-
-dnf groupupdate core
-dnf groupupdate multimedia --setop=install_weak_deps=False --exclude=PackageKit-gstreamer-plugin
-dnf groupupdate sound-and-video
-
-%end
