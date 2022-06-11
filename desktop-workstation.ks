@@ -30,7 +30,7 @@ then
  echo "skip nvidia_mod"
 else
  sudo -u ramser akmodsbuild -k $KERNEL /usr/src/akmods/nvidia-kmod.latest -o /tmp
- rpm -ivh $NVIDIA_KMOD.rpm
+ rpm -ivh /tmp/$NVIDIA_KMOD.rpm
 fi
 
 %end
