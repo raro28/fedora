@@ -8,7 +8,7 @@ mock -r fedora-36-x86_64 --init --install lorax-lmc-novirt vim-minimal pykicksta
 
 mock -r fedora-36-x86_64 --shell --isolation=simple --enable-network 
 
-git clone --recurse-submodules https://github.com/raro28/workstation.git -b 36
+git clone --recurse-submodules https://github.com/raro28/workstation.git -b develop
 
 git submodule update --remote
 
