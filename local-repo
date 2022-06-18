@@ -8,7 +8,7 @@ koji download-build --arch=x86_64 kernel-5.13.9-200.fc34
 
 wget https://www.thefanclub.co.za/sites/default/files/public/overgrive/overgrive-3.4.3.noarch.rpm
 wget http://download.ebz.epson.net/dsc/op/stable/RPMS/x86_64/epson-inkjet-printer-201215w-1.0.0-1lsb3.2.x86_64.rpm
-wget https://downloads.mongodb.com/compass/mongodb-compass-1.31.2.x86_64.rpm
+wget https://downloads.mongodb.com/compass/mongodb-compass-1.31.3.x86_64.rpm
 wget https://dl4jz3rbrsfum.cloudfront.net/software/PPL_64bit_v1.4.1.rpm
 wget https://github.com/veracrypt/VeraCrypt/releases/download/VeraCrypt_1.25.9/veracrypt-1.25.9-CentOS-8-x86_64.rpm
 

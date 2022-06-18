@@ -16,6 +16,7 @@ kernel-5.13.9-200.fc34.x86_64
 kernel-devel-5.13.9-200.fc34.x86_64
 kernel-modules-5.13.9-200.fc34.x86_64
 kernel-modules-extra-5.13.9-200.fc34.x86_64
+kernel-core-5.13.9-200.fc34.x86_64
 
 gdm-laptop-monitor-xml
 

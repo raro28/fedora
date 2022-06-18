@@ -22,5 +22,6 @@ tilix-nautilus
 -simple-scan
 -eog
 -totem
+-mediawriter
 
 %end
