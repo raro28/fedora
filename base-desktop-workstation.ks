@@ -1,4 +1,3 @@
-%include ./gnome-workstation.ks
 %include ./base-workstation.ks
 %include ./clean.ks
 
@@ -10,8 +9,6 @@ network --hostname=mumei
 akmod-nvidia
 kernel-devel
 xorg-x11-drv-nvidia-cuda
-
-gdm-desktop-monitor-xml
 
 %end
 
