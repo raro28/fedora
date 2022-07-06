@@ -1,4 +1,3 @@
-%include ./rpmfusion.ks
 %include ./virtualization.ks
 %include ./qmk.ks
 %include ./obe.ks
@@ -16,6 +15,10 @@ repo --name=raro28-wdm --baseurl=https://download.copr.fedorainfracloud.org/resu
 repo --name="local" --baseurl=http://127.0.0.1:8000
 repo --name=fedora --mirrorlist=https://mirrors.fedoraproject.org/mirrorlist?repo=fedora-$releasever&arch=$basearch
 repo --name=updates --mirrorlist=https://mirrors.fedoraproject.org/mirrorlist?repo=updates-released-f$releasever&arch=$basearch
+repo --name=rpmfusion-free-released --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-$releasever&arch=$basearch
+repo --name=rpmfusion-free-updates --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-updates-released-$releasever&arch=$basearch
+repo --name=rpmfusion-non-free --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-$releasever&arch=$basearch
+repo --name=rpmfusion-non-free-updates --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-updates-released-$releasever&arch=$basearch
 
 part / --fstype="ext4" --size=15000
 
@@ -106,6 +109,10 @@ pitivi
 
 hunspell-es-MX
 libreoffice-langpack-es
+
+rpmfusion-nonfree-release-tainted
+rpmfusion-free-release-tainted
+*-firmware
 
 %end
 
