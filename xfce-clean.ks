@@ -2,12 +2,26 @@
 
 -xfce4-terminal
 -dnfdragora
+-dnfdragora-updater
 -xfburn
 -seahorse
 -catfish
 -geany
 -ristretto
 -claws-mail
+-claws-mail-plugins-vcalendar
+-claws-mail-plugins-tnef
+-claws-mail-plugins-spam-report
+-claws-mail-plugins-smime
+-claws-mail-plugins-rssyl
+-claws-mail-plugins-pgp
+-claws-mail-plugins-notification
+-claws-mail-plugins-newmail
+-claws-mail-plugins-mailmbox
+-claws-mail-plugins-fetchinfo
+-claws-mail-plugins-attachwarner
+-claws-mail-plugins-att-remover
+-claws-mail-plugins-archive
 -pidgin
 -asunder
 -parole
@@ -22,6 +36,8 @@
 -mint-y-theme
 -reybird-dark-theme
 -greybird-light-theme
+-greybird-xfwm4-theme
+-greybird-xfce4-notifyd-theme
 
 tilix-nautilus
 
