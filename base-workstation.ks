@@ -68,6 +68,7 @@ libgtop2-devel
 telnet
 mock
 fedpkg
+gvfs-nfs
 
 bison
 elfutils-libelf-devel
@@ -108,6 +109,7 @@ thunderbird
 gimp
 obs-studio
 pitivi
+rpi-imager
 
 hunspell-es-MX
 libreoffice-langpack-es
