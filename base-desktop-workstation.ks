@@ -37,6 +37,6 @@ else
  rpm -ivh /tmp/$NVIDIA_KMOD.rpm
 fi
 
-grubby --args="initcall_blacklist=acpi_cpufreq_init amd_pstate.shared_mem=1" --update-kernel=ALL
+grubby --args="initcall_blacklist=acpi_cpufreq_init amd_pstate.shared_mem=1 nvidia-drm.modeset=1" --update-kernel=ALL
 
 %end
