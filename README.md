@@ -28,7 +28,7 @@ DE=xfce
 HW=desktop
 
 ksflatten --config workstation/$DE-$HW-workstation.ks -o flat-$DE-$HW-workstation.ks --version F36
-livemedia-creator --ks flat-$DE-$HW-workstation.ks --no-virt --resultdir /var/lmc --project $DE-$HW-workstation-live --make-iso --volid $DE-$HW-workstation-36 --iso-only --iso-name $DE-$HW-workstation-36.iso --releasever 36
+sudo livemedia-creator --ks flat-$DE-$HW-workstation.ks --no-virt --resultdir /var/lmc --project $DE-$HW-workstation-live --make-iso --volid $DE-$HW-workstation-36 --iso-only --iso-name $DE-$HW-workstation-36.iso --releasever 36
 
 livecd-creator -c flat-$DE-$HW-workstation.ks -f $DE-$HW-workstation -t /var/lmc
 
