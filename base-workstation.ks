@@ -110,8 +110,10 @@ gimp
 obs-studio
 pitivi
 rpi-imager
+sqlite
 
 hunspell-es-MX
+libreoffice
 libreoffice-langpack-es
 
 rpmfusion-nonfree-release-tainted
