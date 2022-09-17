@@ -1,4 +1,3 @@
-%include ./rpmfusion.ks
 %include ./virtualization.ks
 %include ./qmk.ks
 %include ./obe.ks
@@ -15,7 +14,13 @@ repo --name=vscode --baseurl=https://packages.microsoft.com/yumrepos/vscode
 repo --name=raro28-wdm --baseurl=https://download.copr.fedorainfracloud.org/results/raro28/wdm/fedora-$releasever-$basearch/
 repo --name="local" --baseurl=http://127.0.0.1:8000
 repo --name=fedora --mirrorlist=https://mirrors.fedoraproject.org/mirrorlist?repo=fedora-$releasever&arch=$basearch
+repo --name=fedora-modular --mirrorlist=https://mirrors.fedoraproject.org/mirrorlist?repo=fedora-modular-$releasever&arch=$basearch
 repo --name=updates --mirrorlist=https://mirrors.fedoraproject.org/mirrorlist?repo=updates-released-f$releasever&arch=$basearch
+repo --name=updates-modular --mirrorlist=https://mirrors.fedoraproject.org/mirrorlist?repo=updates-released-modular-f$releasever&arch=$basearch
+repo --name=rpmfusion-free-released --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-$releasever&arch=$basearch
+repo --name=rpmfusion-free-updates --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-updates-released-$releasever&arch=$basearch
+repo --name=rpmfusion-non-free --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-$releasever&arch=$basearch
+repo --name=rpmfusion-non-free-updates --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-updates-released-$releasever&arch=$basearch
 
 part / --fstype="ext4" --size=15000
 
@@ -63,6 +68,7 @@ libgtop2-devel
 telnet
 mock
 fedpkg
+gvfs-nfs
 
 bison
 elfutils-libelf-devel
@@ -103,9 +109,16 @@ thunderbird
 gimp
 obs-studio
 pitivi
+rpi-imager
+sqlite
 
 hunspell-es-MX
+libreoffice
 libreoffice-langpack-es
+
+rpmfusion-nonfree-release-tainted
+rpmfusion-free-release-tainted
+*-firmware
 
 %end
 
