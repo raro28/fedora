@@ -69,6 +69,7 @@ telnet
 mock
 fedpkg
 gvfs-nfs
+sqlite
 
 bison
 elfutils-libelf-devel
@@ -110,7 +111,8 @@ gimp
 obs-studio
 pitivi
 rpi-imager
-sqlite
+zoom
+
 
 hunspell-es-MX
 libreoffice
