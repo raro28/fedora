@@ -11,4 +11,7 @@ tela-circle-icon-black-theme
 dconf-local-db-config
 user-files
 
+arandr
+lightdm-gtk-greeter-settings
+
 %end

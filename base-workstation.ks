@@ -112,6 +112,7 @@ obs-studio
 pitivi
 rpi-imager
 zoom
+evince
 
 
 hunspell-es-MX
