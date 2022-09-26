@@ -3,14 +3,6 @@
 
 %packages
 
-qogir-theme
-fluent-gtk-theme-red-compact
-qogir-cursors-theme
-tela-circle-icon-black-theme
-
-dconf-local-db-config
-user-files
-
 arandr
 lightdm-gtk-greeter-settings
 
