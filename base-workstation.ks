@@ -21,6 +21,7 @@ repo --name=rpmfusion-free-released --mirrorlist=https://mirrors.rpmfusion.org/m
 repo --name=rpmfusion-free-updates --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-updates-released-$releasever&arch=$basearch
 repo --name=rpmfusion-non-free --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-$releasever&arch=$basearch
 repo --name=rpmfusion-non-free-updates --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-updates-released-$releasever&arch=$basearch
+repo --name=papirus --baseurl=https://download.copr.fedorainfracloud.org/results/dirkdavidis/papirus-icon-theme/epel-8-$basearch
 
 part / --fstype="ext4" --size=15000
 
@@ -69,6 +70,8 @@ telnet
 mock
 fedpkg
 gvfs-nfs
+sqlite
+nmap
 
 bison
 elfutils-libelf-devel
@@ -84,6 +87,15 @@ google-noto-sans-fonts
 google-noto-serif-fonts
 google-noto-sans-display-fonts
 google-noto-serif-display-fonts
+
+qogir-theme
+fluent-gtk-theme-red-compact
+qogir-cursors-theme
+tela-circle-icon-black-theme
+papirus-icon-theme
+
+dconf-local-db-config
+user-files
 
 code
 xterm
@@ -110,7 +122,9 @@ gimp
 obs-studio
 pitivi
 rpi-imager
-sqlite
+zoom
+evince
+
 
 hunspell-es-MX
 libreoffice
