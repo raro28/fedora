@@ -71,6 +71,7 @@ mock
 fedpkg
 gvfs-nfs
 sqlite
+nmap
 
 bison
 elfutils-libelf-devel
