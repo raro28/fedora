@@ -4,6 +4,8 @@ libguestfs-tools
 
 %end
 
+docker-desktop
+
 %post
 
 ln -s /usr/lib/systemd/system/libvirtd.service /etc/systemd/system/multi-user.target.wants/libvirtd.service

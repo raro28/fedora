@@ -124,6 +124,7 @@ pitivi
 rpi-imager
 zoom
 evince
+StarUML
 
 
 hunspell-es-MX

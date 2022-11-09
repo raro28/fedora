@@ -12,6 +12,8 @@ wget https://downloads.mongodb.com/compass/mongodb-compass-1.33.1.x86_64.rpm
 wget https://dl4jz3rbrsfum.cloudfront.net/software/PPL_64bit_v1.4.1.rpm
 wget https://launchpad.net/veracrypt/trunk/1.25.9/+download/veracrypt-1.25.9-CentOS-8-x86_64.rpm
 wget https://cdn.zoom.us/prod/5.11.10.4400/zoom_x86_64.rpm
+wget https://desktop.docker.com/linux/main/amd64/docker-desktop-4.13.0-x86_64.rpm
+wget https://staruml.io/download/releases-v5/StarUML-5.0.2.x86_64.rpm
 
 createrepo /tmp/rpms
 
