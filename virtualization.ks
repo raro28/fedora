@@ -2,9 +2,9 @@
 @Virtualization --optional
 libguestfs-tools
 
-%end
-
 docker-desktop
+
+%end
 
 %post
 
