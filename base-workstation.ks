@@ -71,6 +71,9 @@ fedpkg
 gvfs-nfs
 sqlite
 nmap
+dnf-plugin-system-upgrade
+sshfs
+rpmconf
 
 bison
 elfutils-libelf-devel
