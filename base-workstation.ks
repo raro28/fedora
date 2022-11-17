@@ -31,7 +31,6 @@ timezone America/Mexico_City
 %packages
 
 powerpanel
-epson-inkjet-printer-201215w-1.0.0-1lsb3.2.x86_64
 
 mozilla-ublock-origin
 microsoft-edge-stable
@@ -72,6 +71,9 @@ fedpkg
 gvfs-nfs
 sqlite
 nmap
+dnf-plugin-system-upgrade
+sshfs
+rpmconf
 
 bison
 elfutils-libelf-devel
@@ -124,6 +126,7 @@ pitivi
 rpi-imager
 zoom
 evince
+StarUML
 
 
 hunspell-es-MX
