@@ -23,7 +23,7 @@ repo --name=rpmfusion-non-free --mirrorlist=https://mirrors.rpmfusion.org/mirror
 repo --name=rpmfusion-non-free-updates --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-updates-released-$releasever&arch=$basearch
 repo --name=papirus --baseurl=https://download.copr.fedorainfracloud.org/results/dirkdavidis/papirus-icon-theme/epel-8-$basearch
 
-part / --fstype="ext4" --size=15000
+part / --fstype="ext4" --size=20000
 
 lang en_US
 timezone America/Mexico_City
