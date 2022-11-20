@@ -1,3 +1,5 @@
+repo --name=docker --baseurl=https://download.docker.com/linux/fedora/$releasever/$basearch/stable
+
 %packages
 @Virtualization --optional
 libguestfs-tools
