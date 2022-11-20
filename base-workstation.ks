@@ -12,7 +12,7 @@ repo --name=slack --baseurl=https://packagecloud.io/slacktechnologies/slack/fedo
 repo --name=microsoft-edge --baseurl=https://packages.microsoft.com/yumrepos/edge
 repo --name=vscode --baseurl=https://packages.microsoft.com/yumrepos/vscode
 repo --name=raro28-wdm --baseurl=https://download.copr.fedorainfracloud.org/results/raro28/wdm/fedora-$releasever-$basearch/
-repo --name="local" --baseurl=http://127.0.0.1:8000
+repo --name=lan_rpm --baseurl=http://omv.lan:8000/
 repo --name=fedora --mirrorlist=https://mirrors.fedoraproject.org/mirrorlist?repo=fedora-$releasever&arch=$basearch
 repo --name=fedora-modular --mirrorlist=https://mirrors.fedoraproject.org/mirrorlist?repo=fedora-modular-$releasever&arch=$basearch
 repo --name=updates --mirrorlist=https://mirrors.fedoraproject.org/mirrorlist?repo=updates-released-f$releasever&arch=$basearch
@@ -29,8 +29,6 @@ lang en_US
 timezone America/Mexico_City
 
 %packages
-
-powerpanel
 
 mozilla-ublock-origin
 microsoft-edge-stable
