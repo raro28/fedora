@@ -7,7 +7,6 @@ repo --excludepkgs=kernel* --name=updates
 
 %packages
 
--virtualbox-guest-additions
 -zram-generator
 -zram-generator-defaults
 
