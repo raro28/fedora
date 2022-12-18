@@ -6,6 +6,9 @@ libguestfs-tools
 
 docker-desktop
 
+kubectl
+minikube
+
 %end
 
 %post

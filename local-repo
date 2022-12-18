@@ -12,6 +12,7 @@ wget https://launchpad.net/veracrypt/trunk/1.25.9/+download/veracrypt-1.25.9-Cen
 wget https://cdn.zoom.us/prod/5.11.10.4400/zoom_x86_64.rpm
 wget https://desktop.docker.com/linux/main/amd64/docker-desktop-4.14.1-x86_64.rpm
 wget https://staruml.io/download/releases-v5/StarUML-5.0.2.x86_64.rpm
+wget https://storage.googleapis.com/minikube/releases/latest/minikube-latest.x86_64.rpm
 
 createrepo /tmp/rpms
 
