@@ -127,7 +127,7 @@ zoom
 evince
 StarUML
 file-roller
-
+corectrl
 
 hunspell-es-MX
 libreoffice
