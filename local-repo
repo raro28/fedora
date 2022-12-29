@@ -5,6 +5,7 @@ mkdir /tmp/rpms
 cd /tmp/rpms
 
 koji download-build --arch=x86_64 kernel-5.13.9-200.fc34
+koji download-build --arch=x86_64 kernel-tools-5.13.6-200.fc34
 
 wget https://www.thefanclub.co.za/sites/default/files/public/overgrive/overgrive-3.5.0.noarch.rpm
 wget https://downloads.mongodb.com/compass/mongodb-compass-1.33.1.x86_64.rpm

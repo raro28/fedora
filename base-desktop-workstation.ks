@@ -10,6 +10,9 @@ akmod-nvidia
 kernel-devel
 xorg-x11-drv-nvidia-cuda
 
+kernel-tools
+kernel-tools-libs
+
 %end
 
 %post --erroronfail

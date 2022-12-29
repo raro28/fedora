@@ -16,6 +16,9 @@ kernel-modules-5.13.9-200.fc34.x86_64
 kernel-modules-extra-5.13.9-200.fc34.x86_64
 kernel-core-5.13.9-200.fc34.x86_64
 
+kernel-tools-5.13.6-200.fc34.x86_64
+kernel-tools-libs-5.13.6-200.fc34
+
 %end
 
 %post --erroronfail
