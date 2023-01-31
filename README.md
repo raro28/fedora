@@ -18,7 +18,7 @@ git submodule update --remote
 
 /var/lib/mock/fedora-37-x86_64/root/builddir
 
-rm -rf /var/lmc *.log *.ks /var/run/anaconda.pid
+sudo rm -rf /var/lmc *.ks
 
 git stash && git pull origin develop && git stash pop
 
@@ -27,8 +27,7 @@ HW=desktop
 sudo setenforce 0
 
 ksflatten --config workstation/$DE-$HW-workstation.ks -o flat-$DE-$HW-workstation.ks --version F37
-sudo livemedia-creator --ks flat-$DE-$HW-workstation.ks --no-virt --resultdir /var/lmc --project $DE-$HW-workstation-live --make-iso --volid $DE-$HW-workstation-37 --iso-only --iso-name $DE-$HW-workstation-37.iso --releasever 37
 
-livecd-creator -c flat-$DE-$HW-workstation.ks -f $DE-$HW-workstation -t /var/lmc
+sudo livecd-creator -c flat-$DE-$HW-workstation.ks -f $DE-$HW-workstation -t /var/lmc --cache=/home/ekthor/live/$DE-$HW-workstation --nocleanup --verbose
 
 ```
