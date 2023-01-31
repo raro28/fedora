@@ -135,6 +135,12 @@ rpmfusion-nonfree-release-tainted
 rpmfusion-free-release-tainted
 *-firmware
 
+bpftool
+brother-udev-rule-type1
+brscan5
+brscan-skey
+dcpt520wpdrv
+
 %end
 
 %post --erroronfail
