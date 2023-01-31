@@ -1,7 +1,5 @@
 %include ./base-workstation.ks
 
-network --hostname=mumei
-
 %packages
 
 -xorg-x11-drv-nouveau

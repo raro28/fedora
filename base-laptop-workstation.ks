@@ -1,7 +1,5 @@
 %include ./base-workstation.ks
 
-network --hostname=nameless
-
 repo --excludepkgs=kernel* --name=fedora
 repo --excludepkgs=kernel* --name=updates
 

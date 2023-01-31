@@ -27,6 +27,7 @@ part / --fstype="ext4" --size=20000
 
 lang en_US
 timezone America/Mexico_City
+services --enabled=NetworkManager --disabled=network,sshdS
 
 %packages
 
