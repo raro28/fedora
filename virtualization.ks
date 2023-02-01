@@ -4,6 +4,8 @@ repo --name=docker --baseurl=https://download.docker.com/linux/fedora/$releaseve
 @Virtualization --optional
 libguestfs-tools
 
+qemu-system-aarch64
+
 docker-desktop
 
 kubectl

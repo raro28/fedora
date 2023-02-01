@@ -72,6 +72,9 @@ nmap
 dnf-plugin-system-upgrade
 sshfs
 rpmconf
+remove-retired-packages
+arm-image-installer
+ansible
 
 bison
 elfutils-libelf-devel

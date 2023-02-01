@@ -19,7 +19,6 @@ tilix-nautilus
 -gnome-initial-setup
 -gnome-online-miners
 -gnome-remote-desktop
--simple-scan
 -eog
 -totem
 -mediawriter
