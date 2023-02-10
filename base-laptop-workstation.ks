@@ -1,7 +1,7 @@
 %include ./base-workstation.ks
 
-repo --excludepkgs=kernel* --name=fedora
-repo --excludepkgs=kernel* --name=updates
+repo --excludepkgs=kernel* --name=fedora --mirrorlist=https://mirrors.fedoraproject.org/mirrorlist?repo=fedora-$releasever&arch=$basearch
+repo --excludepkgs=kernel* --name=updates --mirrorlist=https://mirrors.fedoraproject.org/mirrorlist?repo=updates-released-f$releasever&arch=$basearch
 
 %packages
 
