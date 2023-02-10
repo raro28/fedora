@@ -27,7 +27,7 @@ part / --fstype="ext4" --size=20000
 
 lang en_US
 timezone America/Mexico_City
-services --enabled=NetworkManager --disabled=network,sshdS
+services --enabled=NetworkManager --disabled=network,sshd
 
 %packages
 
@@ -39,7 +39,6 @@ overgrive
 skypeforlinux
 slack
 discord
-telegram-desktop
 
 pspp
 awscli
@@ -149,7 +148,6 @@ dcpt520wpdrv
 
 %post --erroronfail
 
-grubby --args="delayacct" --update-kernel=ALL
 sed -i 's/#Storage.*/Storage=persistent/' /etc/systemd/journald.conf
 
 %end
