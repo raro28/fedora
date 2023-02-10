@@ -1,7 +1,16 @@
-user --name=ekthor --groups=users,wheel,mock,libvirt,input,qemu,kvm,systemd-journal,pkg-build --password=12345678 --shell=/usr/bin/zsh
-user --name=ramser --groups=users,wheel --password=12345678 --shell=/usr/bin/zsh
-
 %post --erroronfail
+
+/usr/sbin/useradd \
+    -p '$6$OX3S7RR.l0JCBbK7$9ihUqInRXgcmeeRBNAHL/WXKUz8HDszspnuj.BFEVbZGgo1qejCNSufQtzfx.x.qtjYiaMNtPg5sepJh6.otX/' \
+    -G users,wheel,libvirt,input,qemu,kvm \
+    -s /usr/bin/zsh \
+    ekthor
+
+/usr/sbin/useradd \
+    -p '$6$OX3S7RR.l0JCBbK7$9ihUqInRXgcmeeRBNAHL/WXKUz8HDszspnuj.BFEVbZGgo1qejCNSufQtzfx.x.qtjYiaMNtPg5sepJh6.otX/' \
+    -G users \
+    -s /usr/bin/bash \
+    ramser
 
 mkdir -p /home/ekthor/.cache
 chown ekthor:ekthor -R /home/ekthor/.cache
