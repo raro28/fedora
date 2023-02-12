@@ -11,6 +11,8 @@ docker-desktop
 kubectl
 minikube
 
+podman-compose
+
 %end
 
 %post
