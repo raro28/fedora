@@ -63,7 +63,6 @@ dhex
 flatpak
 libgtop2-devel
 telnet
-mock
 fedpkg
 gvfs-nfs
 sqlite
