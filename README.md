@@ -28,6 +28,6 @@ sudo setenforce 0
 
 ksflatten --config workstation/$DE-$HW-workstation.ks -o flat-$DE-$HW-workstation.ks --version F37
 
-sudo livecd-creator -c flat-$DE-$HW-workstation.ks -f $DE-$HW-workstation -t /var/lmc --cache=/home/$USER/live/$DE-$HW-workstation --nocleanup --verbose
+sudo livecd-creator -c flat-$DE-$HW-workstation.ks -f $DE-$HW-workstation -t /var/lmc --cache=/data/home/$USER/live/$DE-$HW-workstation --nocleanup --verbose
 
 ```
