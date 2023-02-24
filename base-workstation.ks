@@ -149,4 +149,6 @@ dcpt520wpdrv
 
 sed -i 's/#Storage.*/Storage=persistent/' /etc/systemd/journald.conf
 
+ln -s /usr/lib/systemd/system/sshd.service /etc/systemd/system/multi-user.target.wants/sshd.service
+
 %end
