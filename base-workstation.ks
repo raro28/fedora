@@ -6,13 +6,12 @@
 repo --name=updates
 
 repo --name=google --baseurl=http://dl.google.com/linux/chrome/rpm/stable/x86_64
-repo --name=teams --baseurl=https://packages.microsoft.com/yumrepos/ms-teams
 repo --name=skype-stable --baseurl=https://repo.skype.com/rpm/stable/
 repo --name=slack --baseurl=https://packagecloud.io/slacktechnologies/slack/fedora/21/x86_64
 repo --name=microsoft-edge --baseurl=https://packages.microsoft.com/yumrepos/edge
 repo --name=vscode --baseurl=https://packages.microsoft.com/yumrepos/vscode
 repo --name=raro28-wdm --baseurl=https://download.copr.fedorainfracloud.org/results/raro28/wdm/fedora-$releasever-$basearch/
-repo --name="local" --baseurl=http://127.0.0.1:8000
+repo --name=lan_rpm --baseurl=http://omv.lan:8000/
 repo --name=fedora --mirrorlist=https://mirrors.fedoraproject.org/mirrorlist?repo=fedora-$releasever&arch=$basearch
 repo --name=fedora-modular --mirrorlist=https://mirrors.fedoraproject.org/mirrorlist?repo=fedora-modular-$releasever&arch=$basearch
 repo --name=updates --mirrorlist=https://mirrors.fedoraproject.org/mirrorlist?repo=updates-released-f$releasever&arch=$basearch
@@ -22,15 +21,15 @@ repo --name=rpmfusion-free-updates --mirrorlist=https://mirrors.rpmfusion.org/mi
 repo --name=rpmfusion-non-free --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-$releasever&arch=$basearch
 repo --name=rpmfusion-non-free-updates --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-updates-released-$releasever&arch=$basearch
 repo --name=papirus --baseurl=https://download.copr.fedorainfracloud.org/results/dirkdavidis/papirus-icon-theme/epel-8-$basearch
+repo --name=kubectl --baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-\$basearch
 
-part / --fstype="ext4" --size=15000
+part / --fstype="ext4" --size=20000
 
 lang en_US
 timezone America/Mexico_City
+services --enabled=NetworkManager --disabled=network,sshd
 
 %packages
-
-powerpanel
 
 mozilla-ublock-origin
 microsoft-edge-stable
@@ -38,10 +37,8 @@ google-chrome-stable
 overgrive
 
 skypeforlinux
-teams
 slack
 discord
-telegram-desktop
 
 pspp
 awscli
@@ -66,7 +63,6 @@ dhex
 flatpak
 libgtop2-devel
 telnet
-mock
 fedpkg
 gvfs-nfs
 sqlite
@@ -74,6 +70,9 @@ nmap
 dnf-plugin-system-upgrade
 sshfs
 rpmconf
+remove-retired-packages
+arm-image-installer
+ansible
 
 bison
 elfutils-libelf-devel
@@ -127,7 +126,8 @@ rpi-imager
 zoom
 evince
 StarUML
-
+file-roller
+corectrl
 
 hunspell-es-MX
 libreoffice
@@ -137,11 +137,16 @@ rpmfusion-nonfree-release-tainted
 rpmfusion-free-release-tainted
 *-firmware
 
+bpftool
+brother-udev-rule-type1
+brscan5
+brscan-skey
+dcpt520wpdrv
+
 %end
 
 %post --erroronfail
 
-grubby --args="delayacct" --update-kernel=ALL
 sed -i 's/#Storage.*/Storage=persistent/' /etc/systemd/journald.conf
 
 %end

@@ -39,5 +39,6 @@
 -greybird-xfwm4-theme
 -greybird-xfce4-notifyd-theme
 -gtk-xfce-engine
+-xarchiver
 
 %end
