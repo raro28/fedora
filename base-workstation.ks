@@ -150,4 +150,29 @@ sed -i 's/#Storage.*/Storage=persistent/' /etc/systemd/journald.conf
 
 ln -s /usr/lib/systemd/system/sshd.service /etc/systemd/system/multi-user.target.wants/sshd.service
 
+
+cat <<EOF > /etc/yum.repos.d/raro28-wdm-fedora.repo
+[copr:copr.fedorainfracloud.org:raro28:wdm]
+name=Copr repo for wdm owned by raro28
+baseurl=https://download.copr.fedorainfracloud.org/results/raro28/wdm/fedora-$releasever-$basearch/
+type=rpm-md
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://download.copr.fedorainfracloud.org/results/raro28/wdm/pubkey.gpg
+repo_gpgcheck=0
+enabled=1
+enabled_metadata=1
+EOF
+
+cat <<EOF > /etc/yum.repos.d/omv-fedora.repo
+[lan:omv]
+name=omv.lan
+baseurl=http://omv.lan:8000/
+skip_if_unavailable=True
+gpgcheck=0
+repo_gpgcheck=0
+enabled=1
+enabled_metadata=1
+EOF
+
 %end
