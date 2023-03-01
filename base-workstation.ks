@@ -135,7 +135,6 @@ libreoffice-langpack-es
 
 rpmfusion-nonfree-release-tainted
 rpmfusion-free-release-tainted
-*-firmware
 
 bpftool
 brother-udev-rule-type1
