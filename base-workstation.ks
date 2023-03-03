@@ -39,6 +39,7 @@ overgrive
 skypeforlinux
 slack
 discord
+telegram-desktop
 
 pspp
 awscli
