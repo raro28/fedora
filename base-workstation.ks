@@ -75,7 +75,7 @@ remove-retired-packages
 arm-image-installer
 ansible
 pykickstart
-livecd-creator
+livecd-tools
 
 bison
 elfutils-libelf-devel
