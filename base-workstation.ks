@@ -74,6 +74,8 @@ rpmconf
 remove-retired-packages
 arm-image-installer
 ansible
+pykickstart
+livecd-creator
 
 bison
 elfutils-libelf-devel
