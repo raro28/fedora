@@ -18,6 +18,6 @@ blacklist nouveau
 options nouveau modeset=0
 EOF
 
-ln -s /etc/systemd/system/nvidia-powerd.service /dev/null
+ln -s /dev/null /etc/systemd/system/nvidia-powerd.service
 
 %end
