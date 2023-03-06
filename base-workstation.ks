@@ -20,7 +20,6 @@ repo --name=rpmfusion-free-released --mirrorlist=https://mirrors.rpmfusion.org/m
 repo --name=rpmfusion-free-updates --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-updates-released-$releasever&arch=$basearch
 repo --name=rpmfusion-non-free --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-$releasever&arch=$basearch
 repo --name=rpmfusion-non-free-updates --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-updates-released-$releasever&arch=$basearch
-repo --name=papirus --baseurl=https://download.copr.fedorainfracloud.org/results/dirkdavidis/papirus-icon-theme/epel-8-$basearch
 repo --name=kubectl --baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-\$basearch
 
 part / --fstype="ext4" --size=20000
