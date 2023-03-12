@@ -20,7 +20,6 @@ repo --name=rpmfusion-free-released --mirrorlist=https://mirrors.rpmfusion.org/m
 repo --name=rpmfusion-free-updates --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-updates-released-$releasever&arch=$basearch
 repo --name=rpmfusion-non-free --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-$releasever&arch=$basearch
 repo --name=rpmfusion-non-free-updates --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-updates-released-$releasever&arch=$basearch
-repo --name=papirus --baseurl=https://download.copr.fedorainfracloud.org/results/dirkdavidis/papirus-icon-theme/epel-8-$basearch
 repo --name=kubectl --baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-\$basearch
 
 part / --fstype="ext4" --size=20000
@@ -39,6 +38,7 @@ overgrive
 skypeforlinux
 slack
 discord
+telegram-desktop
 
 pspp
 awscli
@@ -73,6 +73,8 @@ rpmconf
 remove-retired-packages
 arm-image-installer
 ansible
+pykickstart
+livecd-tools
 
 bison
 elfutils-libelf-devel
@@ -135,7 +137,6 @@ libreoffice-langpack-es
 
 rpmfusion-nonfree-release-tainted
 rpmfusion-free-release-tainted
-*-firmware
 
 bpftool
 brother-udev-rule-type1
@@ -148,5 +149,32 @@ dcpt520wpdrv
 %post --erroronfail
 
 sed -i 's/#Storage.*/Storage=persistent/' /etc/systemd/journald.conf
+
+ln -s /usr/lib/systemd/system/sshd.service /etc/systemd/system/multi-user.target.wants/sshd.service
+
+
+cat <<EOF > /etc/yum.repos.d/raro28-wdm-fedora.repo
+[copr:copr.fedorainfracloud.org:raro28:wdm]
+name=Copr repo for wdm owned by raro28
+baseurl=https://download.copr.fedorainfracloud.org/results/raro28/wdm/fedora-$releasever-$basearch/
+type=rpm-md
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://download.copr.fedorainfracloud.org/results/raro28/wdm/pubkey.gpg
+repo_gpgcheck=0
+enabled=1
+enabled_metadata=1
+EOF
+
+cat <<EOF > /etc/yum.repos.d/omv-fedora.repo
+[lan:omv]
+name=omv.lan
+baseurl=http://omv.lan:8000/
+skip_if_unavailable=True
+gpgcheck=0
+repo_gpgcheck=0
+enabled=1
+enabled_metadata=1
+EOF
 
 %end
