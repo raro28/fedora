@@ -1,17 +1,14 @@
-repo --name=docker --baseurl=https://download.docker.com/linux/fedora/$releasever/$basearch/stable
-
 %packages
 @Virtualization --optional
 libguestfs-tools
 
 qemu-system-aarch64
 
-docker-desktop
-
 kubectl
 minikube
 
 podman-compose
+podman-docker
 
 %end
 
