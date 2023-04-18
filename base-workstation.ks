@@ -22,7 +22,7 @@ repo --name=rpmfusion-non-free --mirrorlist=https://mirrors.rpmfusion.org/mirror
 repo --name=rpmfusion-non-free-updates --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-updates-released-$releasever&arch=$basearch
 repo --name=kubectl --baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-\$basearch
 
-part / --fstype="ext4" --size=20000
+part / --fstype="ext4" --size=22000
 
 lang en_US
 timezone America/Mexico_City
@@ -110,11 +110,9 @@ mpv
 vlc
 gthumb
 keepassxc
-seahorse
 gparted
 calibre
 mcomix
-transmission-gtk
 dconf-editor
 kdiskmark
 firewall-config
@@ -130,6 +128,7 @@ evince
 StarUML
 file-roller
 corectrl
+baobab
 
 hunspell-es-MX
 libreoffice
@@ -151,6 +150,7 @@ dcpt520wpdrv
 sed -i 's/#Storage.*/Storage=persistent/' /etc/systemd/journald.conf
 
 ln -s /usr/lib/systemd/system/sshd.service /etc/systemd/system/multi-user.target.wants/sshd.service
+ln -s /usr/lib/systemd/system/cpupower.service /etc/systemd/system/multi-user.target.wants/cpupower.service
 
 
 cat <<EOF > /etc/yum.repos.d/raro28-wdm-fedora.repo

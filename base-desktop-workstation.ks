@@ -2,7 +2,6 @@
 
 %packages
 
--xorg-x11-drv-nouveau
 akmod-nvidia
 kernel-devel
 

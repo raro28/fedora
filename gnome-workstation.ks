@@ -15,4 +15,6 @@ file-roller
 
 rm -f /etc/xdg/autostart/gnome-software-service.desktop
 
+sed -i 's/^#.*WaylandEnable=.*/WaylandEnable=false/' /etc/gdm/custom.conf
+
 %end
