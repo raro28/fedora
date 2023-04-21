@@ -3,15 +3,16 @@ git clone --recurse-submodules https://github.com/raro28/workstation.git -b deve
 
 git submodule update --remote
 
+OUTPUT=/data/home/$USER/live
 DE=xfce
 HW=desktop
 VERSION=F38
 sudo setenforce 0
 
-sudo rm -rf /data/home/$USER/live/{lc,flat-$DE-$HW-$VERSION-workstation.ks}
+sudo rm -rf $OUTPUT/{lc,flat-$DE-$HW-$VERSION-workstation.ks}
 
-ksflatten --config workstation/$DE-$HW-workstation.ks -o /data/home/$USER/live/flat-$DE-$HW-$VERSION-workstation.ks --version $VERSION
+ksflatten --config workstation/$DE-$HW-workstation.ks -o $OUTPUT/flat-$DE-$HW-$VERSION-workstation.ks --version $VERSION
 
-sudo livecd-creator -c /data/home/$USER/live/flat-$DE-$HW-$VERSION-workstation.ks -f $DE-$HW-$VERSION-workstation -t /data/home/$USER/live/lc --cache=/data/home/$USER/live/cache --nocleanup --verbose
+sudo livecd-creator -c $OUTPUT/flat-$DE-$HW-$VERSION-workstation.ks -f $DE-$HW-$VERSION-workstation -t $OUTPUT/lc --cache=$OUTPUT/cache --nocleanup --verbose
 
 ```
