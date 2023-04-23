@@ -16,10 +16,14 @@ repo --name=fedora --mirrorlist=https://mirrors.fedoraproject.org/mirrorlist?rep
 repo --name=fedora-modular --mirrorlist=https://mirrors.fedoraproject.org/mirrorlist?repo=fedora-modular-$releasever&arch=$basearch
 repo --name=updates --mirrorlist=https://mirrors.fedoraproject.org/mirrorlist?repo=updates-released-f$releasever&arch=$basearch
 repo --name=updates-modular --mirrorlist=https://mirrors.fedoraproject.org/mirrorlist?repo=updates-released-modular-f$releasever&arch=$basearch
+repo --name=updates-testing --mirrorlist=https://mirrors.fedoraproject.org/mirrorlist?repo=updates-testing-f$releasever&arch=$basearch
+repo --name=updates-testing-modular --mirrorlist=https://mirrors.fedoraproject.org/mirrorlist?repo=updates-testing-modular-f$releasever&arch=$basearch
 repo --name=rpmfusion-free-released --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-$releasever&arch=$basearch
 repo --name=rpmfusion-free-updates --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-updates-released-$releasever&arch=$basearch
 repo --name=rpmfusion-non-free --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-$releasever&arch=$basearch
 repo --name=rpmfusion-non-free-updates --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-updates-released-$releasever&arch=$basearch
+repo --name=rpmfusion-free-updates-testing --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-updates-testing-$releasever&arch=$basearch
+repo --name=rpmfusion-nonfree-updates-testing --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-updates-testing-$releasever&arch=$basearch
 repo --name=kubectl --baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-\$basearch
 
 part / --fstype="ext4" --size=22000
