@@ -5,9 +5,9 @@
 
 repo --name=updates
 
-repo --name=google --baseurl=http://dl.google.com/linux/chrome/rpm/stable/x86_64
+repo --name=google --baseurl=http://dl.google.com/linux/chrome/rpm/stable/$basearch
 repo --name=skype-stable --baseurl=https://repo.skype.com/rpm/stable/
-repo --name=slack --baseurl=https://packagecloud.io/slacktechnologies/slack/fedora/21/x86_64
+repo --name=slack --baseurl=https://packagecloud.io/slacktechnologies/slack/fedora/21/$basearch
 repo --name=microsoft-edge --baseurl=https://packages.microsoft.com/yumrepos/edge
 repo --name=vscode --baseurl=https://packages.microsoft.com/yumrepos/vscode
 repo --name=raro28-wdm --baseurl=https://download.copr.fedorainfracloud.org/results/raro28/wdm/fedora-$releasever-$basearch/
