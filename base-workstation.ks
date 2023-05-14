@@ -133,6 +133,7 @@ StarUML
 file-roller
 corectrl
 baobab
+mockoon
 
 hunspell-es-MX
 libreoffice
