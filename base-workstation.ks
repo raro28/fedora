@@ -5,9 +5,9 @@
 
 repo --name=updates
 
-repo --name=google --baseurl=http://dl.google.com/linux/chrome/rpm/stable/x86_64
+repo --name=google --baseurl=http://dl.google.com/linux/chrome/rpm/stable/$basearch
 repo --name=skype-stable --baseurl=https://repo.skype.com/rpm/stable/
-repo --name=slack --baseurl=https://packagecloud.io/slacktechnologies/slack/fedora/21/x86_64
+repo --name=slack --baseurl=https://packagecloud.io/slacktechnologies/slack/fedora/21/$basearch
 repo --name=microsoft-edge --baseurl=https://packages.microsoft.com/yumrepos/edge
 repo --name=vscode --baseurl=https://packages.microsoft.com/yumrepos/vscode
 repo --name=raro28-wdm --baseurl=https://download.copr.fedorainfracloud.org/results/raro28/wdm/fedora-$releasever-$basearch/
@@ -16,10 +16,14 @@ repo --name=fedora --mirrorlist=https://mirrors.fedoraproject.org/mirrorlist?rep
 repo --name=fedora-modular --mirrorlist=https://mirrors.fedoraproject.org/mirrorlist?repo=fedora-modular-$releasever&arch=$basearch
 repo --name=updates --mirrorlist=https://mirrors.fedoraproject.org/mirrorlist?repo=updates-released-f$releasever&arch=$basearch
 repo --name=updates-modular --mirrorlist=https://mirrors.fedoraproject.org/mirrorlist?repo=updates-released-modular-f$releasever&arch=$basearch
+repo --name=updates-testing --mirrorlist=https://mirrors.fedoraproject.org/mirrorlist?repo=updates-testing-f$releasever&arch=$basearch
+repo --name=updates-testing-modular --mirrorlist=https://mirrors.fedoraproject.org/mirrorlist?repo=updates-testing-modular-f$releasever&arch=$basearch
 repo --name=rpmfusion-free-released --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-$releasever&arch=$basearch
 repo --name=rpmfusion-free-updates --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-updates-released-$releasever&arch=$basearch
 repo --name=rpmfusion-non-free --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-$releasever&arch=$basearch
 repo --name=rpmfusion-non-free-updates --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-updates-released-$releasever&arch=$basearch
+repo --name=rpmfusion-free-updates-testing --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-updates-testing-$releasever&arch=$basearch
+repo --name=rpmfusion-nonfree-updates-testing --mirrorlist=https://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-updates-testing-$releasever&arch=$basearch
 repo --name=kubectl --baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-\$basearch
 
 part / --fstype="ext4" --size=22000
@@ -101,6 +105,7 @@ dconf-local-db-config
 user-files
 
 code
+code-insiders
 xterm
 tilix
 gitk
@@ -129,6 +134,7 @@ StarUML
 file-roller
 corectrl
 baobab
+mockoon
 
 hunspell-es-MX
 libreoffice
