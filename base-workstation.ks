@@ -105,6 +105,7 @@ dconf-local-db-config
 user-files
 
 code
+code-insiders
 xterm
 tilix
 gitk
