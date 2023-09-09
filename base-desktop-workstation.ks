@@ -19,4 +19,13 @@ EOF
 
 ln -s /dev/null /etc/systemd/system/nvidia-powerd.service
 
+cat <<EOF > /etc/modprobe.d/kvm.conf
+options kvm_amd nested=1
+EOF
+
+cat <<EOF > /etc/modprobe.d/asus-sensors.conf
+blacklist asus_wmi
+blacklist eeepc_wmi
+EOF
+
 %end
